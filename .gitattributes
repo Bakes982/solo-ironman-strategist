@@ -1,0 +1,12 @@
+# Normalize line endings to LF on commit
+* text=auto eol=lf
+
+# Windows batch scripts need CRLF
+*.bat text eol=crlf
+
+# Binary files — never touch line endings
+*.jar binary
+*.png binary
+*.gif binary
+*.ico binary
+*.class binary

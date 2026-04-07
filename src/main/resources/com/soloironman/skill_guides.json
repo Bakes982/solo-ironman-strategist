@@ -1,0 +1,1081 @@
+{
+  "skills": [
+    {
+      "skill": "ATTACK",
+      "display_name": "Attack",
+      "methods": [
+        {
+          "min_level": 1,
+          "max_level": 40,
+          "name": "Quests + Crabs",
+          "xp_per_hour": 25000,
+          "location": "Various / Sand/Rock Crabs",
+          "tip": "Do Waterfall Quest at level 1 for free 13,750 Attack XP (jumps you to level 30). Chain with Fight Arena (12K XP), Tree Gnome Village (11K XP), Grand Tree (18K XP). Between quests, AFK on Sand or Rock Crabs — they have low HP and auto-respawn nearby."
+        },
+        {
+          "min_level": 40,
+          "max_level": 70,
+          "name": "Slayer Tasks (Controlled/Attack)",
+          "xp_per_hour": 40000,
+          "location": "Slayer Master assigned",
+          "tip": "Train Attack exclusively through Slayer — you earn Slayer XP, herb/seed drops, and combat XP simultaneously. Set your XP mode to Attack on the combat options tab. Slayer tasks include Abyssal Demons (85+), Nechryaels (80+), and Gargoyles (75+)."
+        },
+        {
+          "min_level": 70,
+          "max_level": 99,
+          "name": "Slayer Tasks (Controlled)",
+          "xp_per_hour": 55000,
+          "location": "Slayer Master assigned",
+          "tip": "70 Attack unlocks Abyssal Whip — the best non-Slayer melee weapon. Use controlled style for balanced 70/70/70 progression, then switch to attack or strength style when you want to push a specific stat."
+        }
+      ]
+    },
+    {
+      "skill": "DEFENCE",
+      "display_name": "Defence",
+      "methods": [
+        {
+          "min_level": 1,
+          "max_level": 40,
+          "name": "Quests + Crabs",
+          "xp_per_hour": 25000,
+          "location": "Various / Sand/Rock Crabs",
+          "tip": "Dragon Slayer I rewards 18,300 Defence XP — do it at the earliest opportunity. Also complete Monkey Madness I (20K Defence XP) and Recipe for Disaster (for subquest Defence XP). Fill gaps with Rock Crabs using the defensive combat style."
+        },
+        {
+          "min_level": 40,
+          "max_level": 70,
+          "name": "Slayer Tasks (Defensive)",
+          "xp_per_hour": 40000,
+          "location": "Slayer Master assigned",
+          "tip": "Use defensive style on Slayer tasks when you need to push Defence ahead of Attack/Strength. Neitiznot Helm requires 55 Defence — worth getting before Barrows. Barrows itself (70 Defence) is your milestone target for wearing full Verac/Dharok sets."
+        },
+        {
+          "min_level": 70,
+          "max_level": 99,
+          "name": "Slayer Tasks (Controlled) + Barrows",
+          "xp_per_hour": 50000,
+          "location": "Slayer / Barrows",
+          "tip": "70 Defence unlocks all Barrows equipment (Dharok, Ahrim, Karil, Guthan, Torag, Verac sets). Morytania Hard Diary (requires 70 Defence + 71 Agility) gives 50% more Barrows rune drops and a permanent Barrows teleport. Best-in-slot defensive gear for mid-game Ironmen."
+        }
+      ]
+    },
+    {
+      "skill": "STRENGTH",
+      "display_name": "Strength",
+      "methods": [
+        {
+          "min_level": 1,
+          "max_level": 40,
+          "name": "Quests + Crabs",
+          "xp_per_hour": 25000,
+          "location": "Various / Sand/Rock Crabs",
+          "tip": "Waterfall Quest gives 13,750 Strength XP at level 1 (jumps to level 30). Also complete Vampire Slayer and Legends Quest subquests for additional Strength XP. Use aggressive combat style on Rock/Sand Crabs to maximise Strength gains while AFK."
+        },
+        {
+          "min_level": 40,
+          "max_level": 70,
+          "name": "Slayer Tasks (Aggressive)",
+          "xp_per_hour": 42000,
+          "location": "Slayer Master assigned",
+          "tip": "Train Strength through Slayer on aggressive style. Ammonite Crabs on Fossil Island are best AFK — 10 HP, instant respawn, very high XP rate for minimal attention. Monkey Madness I rewards 35K Attack + Defence XP and 20K Strength XP — do it as early as possible."
+        },
+        {
+          "min_level": 70,
+          "max_level": 99,
+          "name": "Slayer Tasks (Aggressive) + Nightmare Zone",
+          "xp_per_hour": 65000,
+          "location": "Slayer / NMZ (Yanille)",
+          "tip": "70 Strength unlocks Abyssal Whip effective use and Barrows sets. Nightmare Zone with absorption potions and power surge prayer gives 70K+ Strength XP/hr completely AFK. Use quest bosses only (no hard mode) for the most affordable overload cost."
+        }
+      ]
+    },
+    {
+      "skill": "AGILITY",
+      "display_name": "Agility",
+      "methods": [
+        {
+          "min_level": 1,
+          "max_level": 10,
+          "name": "Gnome Stronghold / Questing",
+          "xp_per_hour": 8000,
+          "location": "Tree Gnome Stronghold",
+          "tip": "Gnome Stronghold Course from level 1 gives early XP. Quests like The Grand Tree, Recruitment Drive and The Tourist Trap also grant Agility XP — do these before grinding rooftops."
+        },
+        {
+          "min_level": 10,
+          "max_level": 33,
+          "name": "Draynor / Al-Kharid Rooftop Course",
+          "xp_per_hour": 10000,
+          "location": "Draynor Village / Al-Kharid",
+          "tip": "Draynor at 10+ gives 10 XP/lap. Switch to Al-Kharid at 20 for 180 XP/lap. These low-level rooftops drop Marks of Grace — collect them for the Graceful Outfit later."
+        },
+        {
+          "min_level": 33,
+          "max_level": 60,
+          "name": "Canifis / Seers' Village Rooftop",
+          "xp_per_hour": 32000,
+          "location": "Canifis / Seers' Village",
+          "tip": "Canifis rooftop is a great Mark of Grace farm (40-50K/hr at 60). Move to Seers' at 60 — use Camelot Teleport to skip the walk back for 52K+/hr. Prioritise Marks for Graceful before 60."
+        },
+        {
+          "min_level": 60,
+          "max_level": 66,
+          "name": "Seers' / Pollnivneach Rooftop",
+          "xp_per_hour": 55000,
+          "location": "Seers' Village / Pollnivneach",
+          "tip": "Seers' rooftop with Camelot teleport diary unlock gives ~55K/hr. Pollnivneach gives 60K+/hr from 60 onward. Use Stamina Potions from herb runs to maintain run energy. Note: at 71 you must train the Colossal Wyrm advanced course in Varlamore to satisfy the Morytania Hard Diary requirement."
+        },
+        {
+          "min_level": 66,
+          "max_level": 76,
+          "name": "Hallowed Sepulchre (floors 1-2) + Colossal Wyrm",
+          "xp_per_hour": 80000,
+          "location": "Darkmeyer (Sins of the Father) / Varlamore",
+          "tip": "Start Hallowed Sepulchre at 66 — floors 1 and 2 give 80K/hr. At 71, also train the Colossal Wyrm advanced course in Varlamore until you meet the Morytania Hard Diary Agility requirement. Diary rewards Morytania Legs 3: 50% more Barrows runes and a permanent Barrows teleport."
+        },
+        {
+          "min_level": 76,
+          "max_level": 99,
+          "name": "Hallowed Sepulchre (all floors)",
+          "xp_per_hour": 105000,
+          "location": "Darkmeyer (Sins of the Father required)",
+          "tip": "Best Agility XP in the game — 102K-108K/hr at maximum effort across floors 1-5. Also drops Blood Shards, Ring of Endurance and the Dark Graceful recolour. Floor 4 unlocks at 82 Agility and floor 5 at 92 Agility for progressively better XP rates."
+        }
+      ]
+    },
+    {
+      "skill": "CONSTRUCTION",
+      "display_name": "Construction",
+      "methods": [
+        {
+          "min_level": 1,
+          "max_level": 20,
+          "name": "Crude Wooden Chairs",
+          "xp_per_hour": 20000,
+          "location": "Player-owned house",
+          "tip": "Build crude wooden chairs and wooden chairs with regular planks to reach level 20. Costs minimal materials. A saw and hammer are required — buy them from the Sawmill operator or any tool shop."
+        },
+        {
+          "min_level": 20,
+          "max_level": 50,
+          "name": "Mahogany Homes — Novice",
+          "xp_per_hour": 110000,
+          "location": "Ardougne / Falador / Varrock / Hosidius",
+          "tip": "Mahogany Homes at Novice tier gives 80K-140K XP/hr using basic planks. Prioritise getting the full Builder's Outfit (5 pieces) for a 2.5% Construction XP bonus. Each piece is awarded randomly from contracts."
+        },
+        {
+          "min_level": 50,
+          "max_level": 70,
+          "name": "Mahogany Homes — Adept",
+          "xp_per_hour": 165000,
+          "location": "Ardougne / Falador / Varrock / Hosidius",
+          "tip": "Adept contracts give 130K-200K XP/hr using oak and teak planks. Finish your Builder's Outfit here if not complete. Each contract also awards Construction points to buy the outfit pieces directly."
+        },
+        {
+          "min_level": 70,
+          "max_level": 99,
+          "name": "Mahogany Homes — Expert",
+          "xp_per_hour": 230000,
+          "location": "Ardougne / Falador / Varrock / Hosidius",
+          "tip": "Expert contracts give 185K-280K XP/hr with mahogany planks. With full Builder's Outfit and the 2.5% bonus this reaches 290K+/hr. The best GP-per-XP Construction method for ironmen by a wide margin. Supplement mahogany plank supply with Rosewood Planks from Sailing resource runs."
+        }
+      ]
+    },
+    {
+      "skill": "COOKING",
+      "display_name": "Cooking",
+      "methods": [
+        {
+          "min_level": 1,
+          "max_level": 15,
+          "name": "Shrimp / Sardine",
+          "xp_per_hour": 15000,
+          "location": "Any fire or range",
+          "tip": "Cook shrimp (30 XP) or sardine (40 XP) from early fishing spots. Keep all the food — it is useful for questing and early Slayer. These levels pass in under 20 minutes."
+        },
+        {
+          "min_level": 15,
+          "max_level": 45,
+          "name": "Trout / Salmon (fly fishing loop)",
+          "xp_per_hour": 70000,
+          "location": "Barbarian Village",
+          "tip": "Fly fish and cook trout (70 XP) and salmon (90 XP) at Barbarian Village — the fire is right next to the fishing spot. Stacks Fishing + Cooking XP at the same location."
+        },
+        {
+          "min_level": 45,
+          "max_level": 80,
+          "name": "Swordfish / Lobsters",
+          "xp_per_hour": 140000,
+          "location": "Hosidius Kitchen (100% favour required)",
+          "tip": "Hosidius kitchen gives a 5% burn reduction, eliminating swordfish burns at 86 Cooking (81 with cooking gauntlets from Family Crest quest). Swordfish give 140 XP each and are excellent Slayer food."
+        },
+        {
+          "min_level": 80,
+          "max_level": 99,
+          "name": "Shark / Anglerfish / 1-tick Karambwan",
+          "xp_per_hour": 300000,
+          "location": "Hosidius Range / Karamja",
+          "tip": "Shark (210 XP) and Anglerfish (230 XP) are ironman food staples. For maximum speed: 1-tick Karambwan at Karamja gives 464K-950K XP/hr with the Tai Bwo Wannai Trio quest completed. Also cook all Sailing Halibut from your Sailing runs — high XP and excellent food."
+        }
+      ]
+    },
+    {
+      "skill": "CRAFTING",
+      "display_name": "Crafting",
+      "methods": [
+        {
+          "min_level": 1,
+          "max_level": 16,
+          "name": "Leather Items",
+          "xp_per_hour": 15000,
+          "location": "Anywhere with a needle and thread",
+          "tip": "Cut leather into gloves (13.8 XP) and boots (16.25 XP). Buy cowhides from the Canifis clothing shop or tan at Al-Kharid tannery. These levels pass quickly — focus on reaching gem jewelry as soon as possible."
+        },
+        {
+          "min_level": 16,
+          "max_level": 46,
+          "name": "Sapphire / Emerald Jewellery",
+          "xp_per_hour": 35000,
+          "location": "Al-Kharid furnace",
+          "tip": "Cut gems from H.A.M. Storeroom pickpockets or Slayer drops. Sapphire rings (40 XP), sapphire bracelets (60 XP). Emerald at 27 Crafting (55 XP per item). Craft and enchant for Magic XP simultaneously. Your primary teleport jewelry source as an Ironman — always prioritise rings of dueling, combat bracelets and amulets of glory."
+        },
+        {
+          "min_level": 46,
+          "max_level": 67,
+          "name": "Ruby / Diamond Jewellery (Rush to Glories)",
+          "xp_per_hour": 55000,
+          "location": "Al-Kharid furnace",
+          "tip": "Ruby amulets (46 Crafting, 85 XP) and diamond amulets (70 XP at 70 Crafting). Rush to Crafting 70 for Amulet of Glory — enchant with Enchant Level 4 Jewellery (68 Magic). Glories are the best ironman teleport amulet and later become the Amulet of Torture upgrade path via Zenyte."
+        },
+        {
+          "min_level": 67,
+          "max_level": 87,
+          "name": "Unpowered Orbs (Molten Glass)",
+          "xp_per_hour": 75000,
+          "location": "Prifddinas furnace (preferred) / Al-Kharid furnace",
+          "tip": "Blow molten glass into unpowered orbs (52.5 XP each, 67 Crafting) using a glassblowing pipe. Molten glass from Soda Ash + Bucket of Sand — Bert's daily 84-bucket delivery is free. Orbs are used for enchanting staves or as mid-range Crafting XP without high gem costs."
+        },
+        {
+          "min_level": 87,
+          "max_level": 99,
+          "name": "Zenyte Jewellery",
+          "xp_per_hour": 100000,
+          "location": "Any furnace",
+          "tip": "Cut Zenyte gems (200 XP each at 87 Crafting) from Zenyte shards dropped by Demonic Gorillas. Craft into Zenyte amulets (150 XP). Amulet of Torture (Zenyte amulet + scroll from Zulrah) is best-in-slot melee amulet. Dragonstone items (150 XP each) are a viable non-Zenyte alternative at this tier."
+        }
+      ]
+    },
+    {
+      "skill": "FARMING",
+      "display_name": "Farming",
+      "methods": [
+        {
+          "min_level": 1,
+          "max_level": 15,
+          "name": "Questing",
+          "xp_per_hour": 0,
+          "location": "Various",
+          "tip": "Fairy Tale Part I gives 3,500 Farming XP for free (jumps to level 17). Goblin Diplomacy, Forgettable Tale of a Drunken Dwarf and Enlightened Journey also grant Farming XP. Complete these before doing any farming runs."
+        },
+        {
+          "min_level": 15,
+          "max_level": 99,
+          "name": "Tree Runs (every 4-8 hrs)",
+          "xp_per_hour": 0,
+          "location": "Falador / Taverly / Varrock / Lumbridge / Gnome Stronghold / Gnome Village",
+          "tip": "Plant and harvest oak/willow/maple/yew/magic trees every 4-8 hours. Use the Explorer's Ring 2+ for Falador teleport. Tree runs are enormous XP per real-world hour — never skip them."
+        },
+        {
+          "min_level": 32,
+          "max_level": 99,
+          "name": "Herb Runs (every 80 min) — USE THE TIMER",
+          "xp_per_hour": 0,
+          "location": "Ardougne / Falador / Morytania / Trollheim / Hosidius / Harmony / Weiss / Farming Guild",
+          "tip": "Plant Ranarr (38) or Snapdragon (62) at all 9 patches every 80 minutes. Use the Farm Run Timer in this panel. Herb runs are the ironman GP/resource backbone — Prayer Potions and Saradomin Brews come from here. At Hunter 75, redirect Ranarrs to Super Attacks and use Moonlight Moth Mixes for prayer restoration instead."
+        },
+        {
+          "min_level": 34,
+          "max_level": 74,
+          "name": "Tithe Farm (Farmer's Outfit)",
+          "xp_per_hour": 25000,
+          "location": "Hosidius, Great Kourend (100% favour required)",
+          "tip": "Tithe Farm gives 20K-35K XP/hr and rewards Farmer's Outfit pieces (2.5% Farming XP bonus). Get the full outfit early — it applies to all farming actions including herb and tree runs."
+        },
+        {
+          "min_level": 32,
+          "max_level": 99,
+          "name": "Birdhouse Runs (Hunter XP — combine with farm runs)",
+          "xp_per_hour": 0,
+          "location": "Fossil Island (Bone Voyage required)",
+          "tip": "Birdhouse runs every 50 minutes give passive Hunter XP and bird nests containing seeds. Toadflax seeds from nests are the source for Saradomin Brews (81 Herblore). Combine with herb runs for a highly efficient rotation."
+        }
+      ]
+    },
+    {
+      "skill": "FIREMAKING",
+      "display_name": "Firemaking",
+      "methods": [
+        {
+          "min_level": 1,
+          "max_level": 35,
+          "name": "Regular / Oak / Willow Logs",
+          "xp_per_hour": 40000,
+          "location": "Anywhere",
+          "tip": "Burn logs from Woodcutting sessions. Regular logs 40 XP, oak 60 XP, willow 90 XP. These levels take under 30 minutes total. Save your maple and yew logs for when you switch to Wintertodt."
+        },
+        {
+          "min_level": 35,
+          "max_level": 50,
+          "name": "Wintertodt (early — Pyromancer Outfit)",
+          "xp_per_hour": 120000,
+          "location": "Wintertodt boss instance, Great Kourend",
+          "tip": "Start Wintertodt at 35 for the Pyromancer Outfit (2.5% FM XP bonus). It also rewards seeds, herbs, ores, gems and food. Bring high healing food and high Hitpoints for safe play."
+        },
+        {
+          "min_level": 50,
+          "max_level": 99,
+          "name": "Wintertodt (main method — full clear)",
+          "xp_per_hour": 280000,
+          "location": "Wintertodt boss instance, Great Kourend",
+          "tip": "Wintertodt gives ~280K XP/hr with the Pyromancer Outfit. Drops include Dragon Axe, seeds, gems, ores, herbs and the Tome of Fire. For ironmen this doubles as resource gathering — train straight to 99 here."
+        }
+      ]
+    },
+    {
+      "skill": "FISHING",
+      "display_name": "Fishing",
+      "methods": [
+        {
+          "min_level": 1,
+          "max_level": 20,
+          "name": "Shrimp / Sardine",
+          "xp_per_hour": 10000,
+          "location": "Draynor Village / Lumbridge Swamp",
+          "tip": "Fish shrimp and sardine for early food. Keep everything — shrimp and sardine are useful early Slayer and questing food. Draynor is ideal with a bank nearby."
+        },
+        {
+          "min_level": 20,
+          "max_level": 58,
+          "name": "Fly Fishing (Trout / Salmon)",
+          "xp_per_hour": 30000,
+          "location": "Barbarian Village or Shilo Village",
+          "tip": "Fly fish trout (50 XP) and salmon (70 XP). Barbarian Village lets you cook at a nearby fire stacking Cooking XP. Shilo Village is banked. Stop and cook everything — you will need the food."
+        },
+        {
+          "min_level": 58,
+          "max_level": 99,
+          "name": "Barbarian Fishing (Otto's Grotto)",
+          "xp_per_hour": 65000,
+          "location": "Barbarian Outpost — Otto's Grotto",
+          "tip": "Best overall Fishing XP at 50K-80K/hr. Also passively gives Strength and Agility XP. Requires Barbarian Training miniquest (Tai Bwo Wannai Trio + fishing completion). 3-tick fishing is recommended — less intense than 2-tick but still great. Sailing Halibut from your Sailing routes supplements your food supply alongside this."
+        }
+      ]
+    },
+    {
+      "skill": "FLETCHING",
+      "display_name": "Fletching",
+      "methods": [
+        {
+          "min_level": 1,
+          "max_level": 25,
+          "name": "Arrow Shafts / Shortbows",
+          "xp_per_hour": 25000,
+          "location": "Anywhere (no bank needed)",
+          "tip": "Cut regular logs into arrow shafts (5 XP per 15) or whittle shortbows (5 XP). Fast, cheap XP — do this while doing other activities. Complete these levels in under 30 minutes using logs from Woodcutting sessions."
+        },
+        {
+          "min_level": 25,
+          "max_level": 52,
+          "name": "Longbows (Oak → Willow → Maple)",
+          "xp_per_hour": 60000,
+          "location": "Anywhere (bank for strings)",
+          "tip": "Oak longbows (25-40: 60 XP) and willow longbows (40-52: 83.3 XP) are the best XP-per-log ratio. Maple Longbows (55 Fletching) are the classic High Alch item. Farm flax near Seers' Village bank for free bowstrings. High Alch finished bows for passive Magic XP and GP."
+        },
+        {
+          "min_level": 52,
+          "max_level": 74,
+          "name": "Broad Arrows (passive — fletch anywhere)",
+          "xp_per_hour": 120000,
+          "location": "Anywhere — fletch during other activities",
+          "tip": "Broad Arrowheads from Slayer Masters (55 Slayer req, 10gp per 25 arrowheads). Each Broad Arrow is 15 XP — fletch 1,000+ in a single bank trip during farm runs, herb runs or banking trips. This is the entire Fletching strategy from 52 to 74 for most Ironmen — zero active time investment."
+        },
+        {
+          "min_level": 74,
+          "max_level": 99,
+          "name": "Hunters' Sunlight Crossbow + Dragon Javelins",
+          "xp_per_hour": 150000,
+          "location": "Player inventory",
+          "tip": "At 74 Fletching, craft the Hunters' Sunlight Crossbow (Sunlight antelope antler + any Hunters' crossbow) — your best-in-slot ranged weapon pre-Twisted Bow. Dragon Javelins (92 Fletching, 130 XP each) are fast endgame XP. Continue Broad Arrows passively on the side for free supplementary XP."
+        }
+      ]
+    },
+    {
+      "skill": "HERBLORE",
+      "display_name": "Herblore",
+      "methods": [
+        {
+          "min_level": 3,
+          "max_level": 26,
+          "name": "Attack Potions (Guam + Eye of Newt)",
+          "xp_per_hour": 5000,
+          "location": "Player inventory",
+          "tip": "Guam leaves from low-level herb patches. Eye of Newt from Jatizso or Port Sarim shops. Attack Potions are limited-use but levelling early Herblore is critical — get to Prayer Potions ASAP."
+        },
+        {
+          "min_level": 26,
+          "max_level": 38,
+          "name": "Strength Potions (Tarromin + Limpwurt Root)",
+          "xp_per_hour": 8000,
+          "location": "Player inventory",
+          "tip": "Tarromin herbs drop from many mid-level monsters. Limpwurt Roots from Hill Giants in the Edgeville Dungeon or farming limpwurt patches. Strength Potions are actually useful for melee training."
+        },
+        {
+          "min_level": 38,
+          "max_level": 45,
+          "name": "Prayer Potions (Ranarr + Snape Grass)",
+          "xp_per_hour": 30000,
+          "location": "Player inventory",
+          "tip": "Ranarr seeds from birdhouse runs, Slayer and farming. Snape Grass from Waterbirth Island or farming snape grass patches at Hosidius. Prayer Potions are ironman currency — make as many as possible. At Hunter 75, Moonlight Moth Mixes replace Prayer Pots on Slayer tasks, freeing Ranarrs for Super Attacks."
+        },
+        {
+          "min_level": 45,
+          "max_level": 63,
+          "name": "Super Attack Potions (Irit + Eye of Newt)",
+          "xp_per_hour": 50000,
+          "location": "Player inventory",
+          "tip": "Irit herbs from farming (32 Farming). Eye of Newt in bulk from Jatizso or Taverley shops. Super Attack Potions are meta for Slayer — make large batches whenever you have Irit stock."
+        },
+        {
+          "min_level": 63,
+          "max_level": 81,
+          "name": "Super Restore (Snapdragon + Red Spider Eggs)",
+          "xp_per_hour": 90000,
+          "location": "Player inventory",
+          "tip": "Snapdragon from farming (62 Farming). Red Spider Eggs from Varrock Sewers or Edgeville Dungeon. Super Restores are superior to Prayer Potions for bossing — restores all stats including Prayer."
+        },
+        {
+          "min_level": 81,
+          "max_level": 99,
+          "name": "Saradomin Brew (Toadflax + Crushed Nest)",
+          "xp_per_hour": 150000,
+          "location": "Player inventory",
+          "tip": "Toadflax from farming (38 Farming). Crushed Nests from birdhouse runs (74 Farming + 5 Hunter). Saradomin Brews are the best ironman healing potion — always combine with Super Restores to counteract the stat drain."
+        }
+      ]
+    },
+    {
+      "skill": "HITPOINTS",
+      "display_name": "Hitpoints",
+      "methods": [
+        {
+          "min_level": 10,
+          "max_level": 50,
+          "name": "Sand / Rock Crabs",
+          "xp_per_hour": 20000,
+          "location": "Hosidius (Sand Crabs) / Fossil Island (Rock Crabs)",
+          "tip": "Sand and Rock Crabs are the best AFK Hitpoints training for low-mid levels. They have very low defence and auto-respawn nearby. Stack Hitpoints naturally by training Attack/Strength/Defence through combat. Hitpoints XP is always 1/3 of your combat XP regardless of style."
+        },
+        {
+          "min_level": 50,
+          "max_level": 80,
+          "name": "Slayer Tasks",
+          "xp_per_hour": 35000,
+          "location": "Slayer dungeons",
+          "tip": "Hitpoints XP tracks your combat XP automatically — you cannot train it directly. Every combat XP action gives 1/3 Hitpoints XP. Training through Slayer is the most efficient method as you earn Slayer XP, drops, and combat XP all simultaneously."
+        },
+        {
+          "min_level": 80,
+          "max_level": 99,
+          "name": "Nightmare Zone / Slayer",
+          "xp_per_hour": 50000,
+          "location": "NMZ (Yanille) / Slayer dungeons",
+          "tip": "Nightmare Zone with Absorption Potions gives completely AFK 50K+ combat XP/hr. Run Power Surge prayer to maximise output. For active play, high-level Slayer (Duradel tasks) gives the best Hitpoints XP and drops simultaneously."
+        }
+      ]
+    },
+    {
+      "skill": "HUNTER",
+      "display_name": "Hunter",
+      "methods": [
+        {
+          "min_level": 1,
+          "max_level": 9,
+          "name": "Ruby Harvest / Copper Longtails",
+          "xp_per_hour": 6000,
+          "location": "Piscatoris Hunting Grounds / Miscellania",
+          "tip": "Ruby Harvests (1 Hunter, 24 XP each) and Copper Longtails (9 Hunter, 61 XP each). These levels take under 30 minutes. Visit the Hunter Guild in Varlamore immediately at level 9 to pick up your first Rumour task — it applies a loot bonus on top of regular catch XP from the start."
+        },
+        {
+          "min_level": 9,
+          "max_level": 29,
+          "name": "Varlamore Rumours — Starter Tasks",
+          "xp_per_hour": 15000,
+          "location": "Hunter Guild, Varlamore",
+          "tip": "Speak to any Hunter Guild NPC in Varlamore for a Rumour task. Rumours scale with your level and award bonus loot bags on completion containing seeds, gems and Varlamore materials. Always have an active Rumour when training Hunter. The plugin HUD overlay tracks your current Rumour target in real time."
+        },
+        {
+          "min_level": 29,
+          "max_level": 53,
+          "name": "Swamp Lizards / Falconry",
+          "xp_per_hour": 45000,
+          "location": "Morytania swamp / Piscatoris Falconry Area",
+          "tip": "Swamp Lizards at Canifis (29 Hunter, 152 XP each) give 45K+ XP/hr with a 4-box trap setup. Switch to Falconry at 43 Hunter (Piscatoris Falconry Area, 132 XP per Desert Kebbit) for better rates. Use Rumours alongside whichever method you are training for bonus loot."
+        },
+        {
+          "min_level": 53,
+          "max_level": 73,
+          "name": "Grey/Red Chinchompas / Rumour Tasks",
+          "xp_per_hour": 90000,
+          "location": "Piscatoris (Grey, 53) / Feldip Hills (Red, 63)",
+          "tip": "Grey Chinchompas (53 Hunter, 198 XP each) at Piscatoris Hunting Grounds bridge your XP from 53 to 63. Switch to Red Chinchompas (63 Hunter, 265 XP each) in Feldip Hills for better XP and far greater value — hold all red chins for Ranged training at Maniacal Monkeys later. Black Chinchompas in Wilderness level 32 give higher XP but carry PK risk."
+        },
+        {
+          "min_level": 73,
+          "max_level": 99,
+          "name": "Moonlight Moths + Sunlight Antelopes (Rumours)",
+          "xp_per_hour": 120000,
+          "location": "Varlamore — moonlit hunting grounds",
+          "tip": "Moonlight Moths (75 Hunter) are the 2026 meta prayer restoration source — their Mixes restore prayer without Ranarrs, freeing your herb patches for Super Attacks and Saradomin Brews. Sunlight Antelopes drop antlers for the Sunlight Crossbow (74 Fletching). At 73+, Rumour tasks frequently assign both creatures for top-tier loot bags. Push to 75 as fast as possible for Moth Mixes."
+        }
+      ]
+    },
+    {
+      "skill": "MAGIC",
+      "display_name": "Magic",
+      "methods": [
+        {
+          "min_level": 1,
+          "max_level": 45,
+          "name": "Curse / Confuse / Splashing",
+          "xp_per_hour": 8000,
+          "location": "Any low-defence NPC (monk at Edgeville monastery)",
+          "tip": "Splashing (equip full negative magic bonus) gives 3 XP per cast passively. Casting Curse on the monk at Edgeville monastery is a popular semi-AFK method. Early Magic XP also comes from questing."
+        },
+        {
+          "min_level": 43,
+          "max_level": 55,
+          "name": "Superheat Item + Enchanting",
+          "xp_per_hour": 40000,
+          "location": "Blast Furnace / Any anvil",
+          "tip": "Superheat Item (43 Magic, 53 XP each) while smelting gold at Blast Furnace gives simultaneous Magic + Smithing XP. Enchanting bolts or jewellery is also efficient and produces useful ironman items."
+        },
+        {
+          "min_level": 55,
+          "max_level": 99,
+          "name": "High Level Alchemy (passive)",
+          "xp_per_hour": 78000,
+          "location": "Anywhere — cast from inventory",
+          "tip": "High Alch gives 65 XP per cast (78K/hr). Alch rune items from Slayer, dragon items or bulk store-bought items. Nature Runes from Abyss Runecrafting or Slayer drops. Cast while doing anything else for fully passive XP."
+        },
+        {
+          "min_level": 62,
+          "max_level": 99,
+          "name": "Ice Burst / Barrage on Slayer tasks",
+          "xp_per_hour": 280000,
+          "location": "Catacombs of Kourend / Slayer dungeons",
+          "tip": "Burst/Barrage multi-target Slayer tasks (Dust Devils, Nechryaels, Maniacal Monkeys) give 150K-400K Magic XP/hr alongside Slayer XP. The optimal ironman Magic method — progress two skills simultaneously."
+        }
+      ]
+    },
+    {
+      "skill": "MINING",
+      "display_name": "Mining",
+      "methods": [
+        {
+          "min_level": 1,
+          "max_level": 15,
+          "name": "Copper / Tin Ore",
+          "xp_per_hour": 15000,
+          "location": "Lumbridge Swamp / Barbarian Village",
+          "tip": "Mine copper and tin at Lumbridge Swamp or Barbarian Village. Smelt into bronze bars for early Smithing XP. These levels take under 20 minutes total."
+        },
+        {
+          "min_level": 15,
+          "max_level": 45,
+          "name": "Iron Ore",
+          "xp_per_hour": 30000,
+          "location": "Al-Kharid Mine / Mining Guild (60+)",
+          "tip": "Iron Ore gives 35 XP per ore. Smelt into steel bars with coal or Superheat Item for simultaneous Magic XP. Mining Guild unlocks at 60 for faster ore respawns — worth the grind."
+        },
+        {
+          "min_level": 45,
+          "max_level": 75,
+          "name": "Blast Mine / Volcanic Mine (Ironman Best)",
+          "xp_per_hour": 65000,
+          "location": "Lovakengj (Blast Mine) / Fossil Island (Volcanic Mine)",
+          "tip": "Volcanic Mine (50+ Mining, 70+ Agility) on Fossil Island is the Ironman best-in-slot Mining method — it deposits noted ores directly into your bank via the cart system, giving amethyst (80+), runite ore (85+), coal, and gold without banking trips. 70–80K XP/hr. Blast Mine (45+ Mining, Lovakengj favour) is the alternative at 55K/hr if you lack the Agility level. Both are far better than open-world mining for Ironman supply generation."
+        },
+        {
+          "min_level": 75,
+          "max_level": 99,
+          "name": "3-tick Granite (or AFK Motherlode Mine)",
+          "xp_per_hour": 80000,
+          "location": "Kharidian Desert Quarry / Motherlode Mine",
+          "tip": "3-tick Granite gives 70K-90K XP/hr — the fastest Mining method. Requires desert heat protection (waterskins or Tier 3 Nardah enchantment). Motherlode Mine (55K/hr) is a relaxed AFK alternative that also produces coal and gold ore."
+        }
+      ]
+    },
+    {
+      "skill": "PRAYER",
+      "display_name": "Prayer",
+      "methods": [
+        {
+          "min_level": 1,
+          "max_level": 43,
+          "name": "Big Bones (Hill Giants)",
+          "xp_per_hour": 25000,
+          "location": "Edgeville Dungeon (Hill Giants)",
+          "tip": "Kill Hill Giants in Edgeville Dungeon for Big Bones (15 XP each, 157.5 XP per bury). Stack limpwurt roots for Herblore simultaneously. Enable Loot Beams in RuneLite to avoid missing dropped bones."
+        },
+        {
+          "min_level": 43,
+          "max_level": 70,
+          "name": "Dragon Bones at Chaos Altar",
+          "xp_per_hour": 350000,
+          "location": "Chaos Altar — Wilderness level 38 (use Burning Amulet)",
+          "tip": "Chaos Altar gives 350% Prayer XP per bone — Dragon Bones yield 252 XP each normally but 504K XP/hr here! Bring noted bones + coins to unnote at the nearby Elder Chaos Druid. Take nothing else — high PKer risk. Teleport with Burning Amulet to Lava Maze."
+        },
+        {
+          "min_level": 70,
+          "max_level": 99,
+          "name": "Chaos Altar + Superior Dragon Bones",
+          "xp_per_hour": 500000,
+          "location": "Chaos Altar — Wilderness level 38",
+          "tip": "Superior Dragon Bones (from Vorkath, Skeletal Wyverns) give 525 XP base — over 900K/hr at Chaos Altar. Regular Dragon Bones remain excellent at 504K/hr. Stack bones from Chaos Elemental, Brutal Black Dragons, and high-level Slayer tasks."
+        }
+      ]
+    },
+    {
+      "skill": "RANGED",
+      "display_name": "Ranged",
+      "methods": [
+        {
+          "min_level": 1,
+          "max_level": 40,
+          "name": "Questing",
+          "xp_per_hour": 0,
+          "location": "Various",
+          "tip": "Temple of Ikov gives 8,000 Ranged XP. Horror from the Deep gives 4,662 Ranged XP. The Tourist Trap gives 4,650 Ranged XP. Together these quests carry you close to level 40 with zero grinding. Get to level 40 via questing before touching Slayer for efficiency."
+        },
+        {
+          "min_level": 40,
+          "max_level": 70,
+          "name": "Slayer with Rune Crossbow + Broad Bolts",
+          "xp_per_hour": 40000,
+          "location": "Various Slayer dungeons",
+          "tip": "Train Ranged through Slayer using broad bolts (3 GP each, unlimited from Slayer masters for 35 Slayer points). Rune Crossbow via Slayer reward or the Ranging Guild. Double-dip Slayer + Ranged XP simultaneously. Craft Hunters' Sunlight Crossbow at 74 Fletching for a major DPS upgrade."
+        },
+        {
+          "min_level": 70,
+          "max_level": 99,
+          "name": "Red Chinchompas at Maniacal Monkeys",
+          "xp_per_hour": 400000,
+          "location": "Ape Atoll dungeon (Monkey Madness I + II required)",
+          "tip": "Red Chinchompas at Ape Atoll Maniacal Monkeys give up to 1M+ Ranged XP/hr with max setup. Hunt red chinchompas yourself at 63 Hunter. At 90+ Ranged, prepare for the Colosseum of Fortune in Varlamore — clearing it rewards Dizana's Quiver, best-in-slot ranged ammo holder."
+        }
+      ]
+    },
+    {
+      "skill": "RUNECRAFTING",
+      "display_name": "Runecrafting",
+      "methods": [
+        {
+          "min_level": 1,
+          "max_level": 44,
+          "name": "Quests + Air/Mind/Body Runes",
+          "xp_per_hour": 8000,
+          "location": "Air Altar (south of Falador) / Mind Altar (north of Falador)",
+          "tip": "Rune Mysteries quest unlocks Runecrafting — do it immediately. Quests give RC XP: Enter the Abyss (1,000 XP), The Eyes of Glouphrie (6,000 XP), What Lies Below (8,000 XP). Fill gaps crafting Air Runes (cheapest pouches, low XP) or Mind/Body Runes. Craft Lava Runes at 23 RC using Earth Runes + Astral Rune as a faster mid-level option."
+        },
+        {
+          "min_level": 44,
+          "max_level": 65,
+          "name": "Nature Runes via Abyss",
+          "xp_per_hour": 25000,
+          "location": "Nature Altar (Karamja / fairy ring CKR)",
+          "tip": "Nature Runes at 44 RC are a big milestone — now you can cast Superheat and High Alchemy. Run through the Abyss (Edgeville → Abyss → Nature Altar) with a full set of pouches (Small, Medium, Large, Giant). Bring a Glory amulet for fast Edgeville banking. Wear minimal gear in the Wilderness section. Craft 750–900 Natures/hr with optimal pouches and banking."
+        },
+        {
+          "min_level": 65,
+          "max_level": 77,
+          "name": "Lava Runes (Lunar Spellbook)",
+          "xp_per_hour": 65000,
+          "location": "Fire Altar (south of Varrock, or Abyss)",
+          "tip": "Lava Runes combine Earth Runes with the Fire Altar to produce Lava Runes (10 XP each). Bring Earth Runes and a Binding Necklace — the necklace prevents the combination failing (without it ~50% of attempts fail). Use the Lunar spellbook's NPC Contact to repair pouches without banking. With Giant/Large/Medium/Small pouches full you craft 1,200+ runes per trip. High-attention but very fast XP — best RC method until you reach 77 for Blood Runes."
+        },
+        {
+          "min_level": 77,
+          "max_level": 99,
+          "name": "Blood Runes at Arceuus",
+          "xp_per_hour": 38000,
+          "location": "Dense Essence Mine + Blood Altar (Zeah)",
+          "tip": "Blood Runes require RC 77 + 100% Arceuus favour (no quest required). Mine Dense Essence Blocks at the Dense Essence Mine, chisel them to Dark Essence Fragments, then craft at the Blood Altar for 10.5 XP per fragment plus passive Crafting XP. Very AFK-friendly compared to Lava Runes — both steps award XP. XP/hr is lower than Lava Runes but Blood Runes give 100–200K GP/hr income and Ironmen need them for Ancient Magicks (Barrage/Burst) — making this method self-sufficient. At RC 90 you can craft double runes for double output."
+        }
+      ]
+    },
+    {
+      "skill": "SAILING",
+      "display_name": "Sailing",
+      "methods": [
+        {
+          "min_level": 1,
+          "max_level": 20,
+          "name": "Dinghy — Coastal Routes",
+          "xp_per_hour": 10000,
+          "location": "Port Sarim, Ardougne, Catherby docks",
+          "tip": "Collect your free Dinghy from the Port Sarim Shipwright — no cost required. Coastal Routes from level 1 produce fishing hauls, navigation charts and crafting rope. Assign your starter crew member to the Supply dock role before logging out for passive resource income. These levels pass in a couple of hours of casual sailing."
+        },
+        {
+          "min_level": 20,
+          "max_level": 40,
+          "name": "Sloop — Island Exploration Routes",
+          "xp_per_hour": 25000,
+          "location": "Port Sarim / Piscatoris harbour",
+          "tip": "Upgrade to a Sloop at 20 Sailing — buy the hull upgrade from the Port Sarim Shipwright with accumulated Sailing resources. Island Exploration routes double your XP rate and unlock small island resource caches. Prioritise hull durability upgrades before sails — a sturdier hull survives more encounters per trip."
+        },
+        {
+          "min_level": 40,
+          "max_level": 60,
+          "name": "Caravel — Resource Runs",
+          "xp_per_hour": 45000,
+          "location": "Open sea from Port Sarim / Ardougne docks",
+          "tip": "Caravel tier (40 Sailing) dramatically improves cargo capacity and trip duration. Access Rosewood Plank resource nodes (200+ planks per trip — essential Construction supply) and Sailing Halibut fishing zones (20 HP heal, replaces Sharks as your primary Slayer food). Run Encounter events for bonus XP whenever they appear on your route."
+        },
+        {
+          "min_level": 60,
+          "max_level": 80,
+          "name": "Barracuda Trials — Best Ironman XP",
+          "xp_per_hour": 75000,
+          "location": "Open sea Encounter zones",
+          "tip": "Best Sailing XP/hr for Ironmen. Barracuda Trials are a combat-agility encounter on the open sea that reward both Sailing XP and Ironman-friendly loot (unique fish and rare ship components). Stack your crew with combat-specialist members before attempting. Prioritise Barracuda Trials over passive resource runs until you unlock Galleon tier at 70+ Sailing."
+        },
+        {
+          "min_level": 80,
+          "max_level": 99,
+          "name": "Galleon — Long Haul Routes + Barracuda Trials",
+          "xp_per_hour": 100000,
+          "location": "Distant island chains (Sailing world map)",
+          "tip": "Galleon class is the endgame ship. Long Haul Routes to distant island chains give 100K+ XP/hr and deliver: Sailing Halibut in bulk, Ironwood and Rosewood Planks, and rare navigation charts. Combine 60% Long Haul Routes with 40% Barracuda Trials for maximum Sailing XP efficiency. Complete all Port Supply side quests for permanent crew XP bonuses that carry forward to 99."
+        }
+      ]
+    },
+    {
+      "skill": "SLAYER",
+      "display_name": "Slayer",
+      "methods": [
+        {
+          "min_level": 1,
+          "max_level": 20,
+          "name": "Turael (skip tool only)",
+          "xp_per_hour": 15000,
+          "location": "Burthorpe",
+          "tip": "Turael is used to skip unwanted tasks at 0 point cost (resets your streak). Do not regularly assign from Turael — only use him for skipping. Points matter: your first priority is 400 points for the Slayer Helmet."
+        },
+        {
+          "min_level": 20,
+          "max_level": 50,
+          "name": "Mazchna (20+ CB required)",
+          "xp_per_hour": 25000,
+          "location": "Canifis",
+          "tip": "Mazchna is the first real Slayer master. Good task variety: Banshees, Cave Crawlers, Crawling Hands, Cockatrice. Block tasks you cannot kill efficiently. Always use your best combat style for each task."
+        },
+        {
+          "min_level": 50,
+          "max_level": 75,
+          "name": "Chaeldar → Konar (Brimstone Keys)",
+          "xp_per_hour": 40000,
+          "location": "Zanaris (Chaeldar) / Mount Karuulm (Konar)",
+          "tip": "Start with Chaeldar (70 CB, Lost City required) then switch to Konar quo Maten (75 CB) as soon as eligible — Konar is the Ironman meta master from this point. Every Konar task has a chance of dropping a Brimstone Key, which opens the chest at the base of Mount Karuulm for: noted Ranarr/Snapdragon seeds, blood runes, and dragon arrows. Block: Kalphites, Jungle Strykewyrms. Priority tasks: Gargoyles (bolt tips), Abyssal Demons (Whip chance). Save 400 points for the Slayer Helmet."
+        },
+        {
+          "min_level": 75,
+          "max_level": 85,
+          "name": "Konar (Brimstone Keys) — Ironman Meta",
+          "xp_per_hour": 50000,
+          "location": "Mount Karuulm (Konar)",
+          "tip": "Konar quo Maten is the best Ironman Slayer master at this stage. Brimstone Keys drop from every task and open a chest containing noted Ranarr/Snapdragon seeds, blood runes (100–200), dragon arrows (50–100), and other supplies. Run 9 Konar tasks then 1 Duradel for points. Top tasks: Basilisk Knights (Faceguard/Basilisk Jaw), Hydra (Ferocious Gloves), Wyrms, Drakes. Nieve (85 CB, Gnome Stronghold) is the alternative for faster points — use her for the Slayer Helmet unlock then switch back to Konar."
+        },
+        {
+          "min_level": 85,
+          "max_level": 99,
+          "name": "Duradel (100+ CB, 50 Slayer, Shilo Village required)",
+          "xp_per_hour": 60000,
+          "location": "Shilo Village",
+          "tip": "Duradel gives the best tasks and drops in the game. Block: Hellhounds (unless Cerberus unlocked), Trolls. Priority: Hydra (Ferocious Gloves — BiS melee), Alchemical Hydra (best in slot range drops). Burst Dust Devils and Nechryaels for Magic XP simultaneously."
+        }
+      ]
+    },
+    {
+      "skill": "SMITHING",
+      "display_name": "Smithing",
+      "methods": [
+        {
+          "min_level": 1,
+          "max_level": 29,
+          "name": "The Knight's Sword (quest)",
+          "xp_per_hour": 0,
+          "location": "Quest — Falador area",
+          "tip": "The Knight's Sword quest awards 12,725 Smithing XP — instantly jumping from level 1 to 29. No Smithing requirement. Complete this immediately after Tutorial Island. Best XP-per-time of any early Smithing activity."
+        },
+        {
+          "min_level": 29,
+          "max_level": 40,
+          "name": "Iron / Steel Bars",
+          "xp_per_hour": 25000,
+          "location": "Al-Kharid furnace / Edgeville furnace",
+          "tip": "Smelt iron bars (12.5 XP, use Ring of Forging for 100% success) or steel bars (17.5 XP with 2 coal each). Mine the ore yourself for fully self-sufficient progression."
+        },
+        {
+          "min_level": 40,
+          "max_level": 99,
+          "name": "Gold Bars at Blast Furnace (Goldsmith Gauntlets)",
+          "xp_per_hour": 380000,
+          "location": "Keldagrim — Blast Furnace",
+          "tip": "Gold bars with Goldsmith Gauntlets at Blast Furnace give 56.2 XP each — 380K+ XP/hr, the fastest Smithing method by far. Gauntlets require Family Crest quest. Pay the dwarf foreman 2,500 coins every 10 minutes or use Rings of Charos (a)."
+        }
+      ]
+    },
+    {
+      "skill": "THIEVING",
+      "display_name": "Thieving",
+      "methods": [
+        {
+          "min_level": 1,
+          "max_level": 25,
+          "name": "Men / Women",
+          "xp_per_hour": 15000,
+          "location": "Lumbridge / Edgeville",
+          "tip": "Pickpocket men and women for 8 XP each. Edgeville is ideal — nearby bank and food shop. Level 25 takes about 30 minutes. Wear Rogue equipment if you have it for double pickpocket loot."
+        },
+        {
+          "min_level": 25,
+          "max_level": 45,
+          "name": "Blackjacking Bearded Bandits (early)",
+          "xp_per_hour": 60000,
+          "location": "Pollnivneach (The Feud quest required)",
+          "tip": "Blackjack Bearded Bandits for 65 XP per knockout. Requires The Feud quest. This is faster than market stalls and provides coins. Buy summer pies from H.A.M. Dungeon (50 Thieving) for run energy and healing."
+        },
+        {
+          "min_level": 45,
+          "max_level": 99,
+          "name": "Blackjacking Pollnivneach Bandits",
+          "xp_per_hour": 180000,
+          "location": "Pollnivneach (Bandit Camp house)",
+          "tip": "The best Thieving method — 99K-265K XP/hr and ~40-80K GP/hr in coin drops (doubled with Rogue equipment). Knock Out, Pickpocket twice, repeat. Buy summer pies or use Saradomin Brews for healing. Rogue equipment doubles all loot — get it from the Rogue's Den at 50 Thieving."
+        }
+      ]
+    },
+    {
+      "skill": "WOODCUTTING",
+      "display_name": "Woodcutting",
+      "methods": [
+        {
+          "min_level": 1,
+          "max_level": 15,
+          "name": "Regular Trees",
+          "xp_per_hour": 7000,
+          "location": "Anywhere",
+          "tip": "Cut regular trees to level 15. Save the logs for Firemaking or Arrow Shaft fletching. These levels take under 30 minutes and are naturally skipped while training early combat."
+        },
+        {
+          "min_level": 15,
+          "max_level": 35,
+          "name": "Oak Trees",
+          "xp_per_hour": 20000,
+          "location": "Draynor Village / Varrock",
+          "tip": "Oak logs give 37.5 XP each. Cut near a bank and save all logs for Construction (oak planks). Draynor has oaks next to the bank — very convenient. These levels pass quickly."
+        },
+        {
+          "min_level": 35,
+          "max_level": 60,
+          "name": "Willows / Teak Trees",
+          "xp_per_hour": 50000,
+          "location": "Draynor Village / Ape Atoll / Fossil Island",
+          "tip": "Willows (67.5 XP) near Draynor bank are very AFK. Teak trees at Ape Atoll or Fossil Island give 85 XP and are better for Construction supplies (teak planks for Mahogany Homes). Choose based on your Construction needs."
+        },
+        {
+          "min_level": 60,
+          "max_level": 99,
+          "name": "Redwood / Mahogany Trees",
+          "xp_per_hour": 65000,
+          "location": "Fossil Island / Ape Atoll",
+          "tip": "Redwoods at Fossil Island (380 XP each) are extremely AFK — good for low-attention sessions. Mahogany trees at Ape Atoll (125 XP) are faster and supply mahogany planks for Expert Mahogany Homes contracts. Rosewood Planks from Sailing routes can supplement Construction plank supply at 40 Sailing."
+        }
+      ]
+    }
+  ],
+  "herblore_potions": [
+    {
+      "level": 3,
+      "name": "Attack Potion",
+      "herb": "Guam Leaf",
+      "secondary": "Eye of Newt",
+      "xp": 25.0,
+      "secondary_source": "Jatizso Rune Shop, Taverley, Port Sarim Magic Shop",
+      "use": "Basic attack boost — limited use but required to get through early Herblore levels"
+    },
+    {
+      "level": 5,
+      "name": "Antipoison",
+      "herb": "Marrentill",
+      "secondary": "Unicorn Horn Dust",
+      "xp": 37.5,
+      "secondary_source": "Kill Unicorns (White Wolf Mountain / Sinclair Mansion), grind horn with pestle",
+      "use": "Essential for questing and Slayer tasks with poisonous enemies"
+    },
+    {
+      "level": 12,
+      "name": "Strength Potion",
+      "herb": "Tarromin",
+      "secondary": "Limpwurt Root",
+      "xp": 50.0,
+      "secondary_source": "Hill Giants (Edgeville Dungeon), farming limpwurt patches",
+      "use": "Melee strength boost — useful for early combat training sessions"
+    },
+    {
+      "level": 22,
+      "name": "Restore Potion",
+      "herb": "Harralander",
+      "secondary": "Red Spider Eggs",
+      "xp": 62.5,
+      "secondary_source": "Varrock Sewers, Edgeville Dungeon basement, Corsair Cove Resource Area",
+      "use": "Restores drained stats — useful for questing against stat-draining enemies"
+    },
+    {
+      "level": 26,
+      "name": "Energy Potion",
+      "herb": "Harralander",
+      "secondary": "Chocolate Dust",
+      "xp": 67.5,
+      "secondary_source": "Grind chocolate bar with pestle (bought at any food shop for ~5 GP)",
+      "use": "Run energy restore — good for farming runs before you unlock Stamina Potions"
+    },
+    {
+      "level": 38,
+      "name": "Prayer Potion",
+      "herb": "Ranarr Weed",
+      "secondary": "Snape Grass",
+      "xp": 87.5,
+      "secondary_source": "Waterbirth Island (pick up ground spawns), Hosidius allotment (farm snape grass seeds)",
+      "use": "IRONMAN BACKBONE — make every single one you can. At Hunter 75 redirect Ranarrs to Super Attacks and use Moonlight Moth Mixes for prayer restoration instead. 87.5 XP each"
+    },
+    {
+      "level": 45,
+      "name": "Super Attack Potion",
+      "herb": "Irit Leaf",
+      "secondary": "Eye of Newt",
+      "xp": 100.0,
+      "secondary_source": "Jatizso Rune Shop, Taverley, Port Sarim Magic Shop — buy in bulk (1,000+)",
+      "use": "Meta Slayer potion — needed for efficient Slayer and all bossing"
+    },
+    {
+      "level": 48,
+      "name": "Super Antipoison",
+      "herb": "Irit Leaf",
+      "secondary": "Unicorn Horn Dust",
+      "xp": 106.3,
+      "secondary_source": "Kill Unicorns (White Wolf Mountain / Sinclair Mansion), grind horn with pestle",
+      "use": "Long-lasting antipoison — covers venom/poison for extended Slayer tasks"
+    },
+    {
+      "level": 52,
+      "name": "Super Energy Potion",
+      "herb": "Avantoe",
+      "secondary": "Mort Myre Fungi",
+      "xp": 117.5,
+      "secondary_source": "Mort Myre Swamp with silver sickle (b) — requires Nature Spirit quest",
+      "use": "Restores 40% run energy — great mid-game companion for Agility training"
+    },
+    {
+      "level": 55,
+      "name": "Super Strength Potion",
+      "herb": "Kwuarm",
+      "secondary": "Limpwurt Root",
+      "xp": 125.0,
+      "secondary_source": "Hill Giants (Edgeville Dungeon), farming limpwurt patches",
+      "use": "Best melee strength boost — essential for high-level Slayer tasks and all bossing"
+    },
+    {
+      "level": 63,
+      "name": "Super Restore",
+      "herb": "Snapdragon",
+      "secondary": "Red Spider Eggs",
+      "xp": 142.5,
+      "secondary_source": "Varrock Sewers, Edgeville Dungeon basement, Corsair Cove Resource Area",
+      "use": "Restores ALL stats including Prayer — superior to Prayer Potions in boss situations"
+    },
+    {
+      "level": 65,
+      "name": "Super Defence Potion",
+      "herb": "Cadantine",
+      "secondary": "White Berries",
+      "xp": 150.0,
+      "secondary_source": "White Wolf Mountain bush (free respawn), Wilderness, Crafting Guild bushes",
+      "use": "Defence boost — useful for tanky setups and Defence-training ironmen"
+    },
+    {
+      "level": 69,
+      "name": "Antifire Potion",
+      "herb": "Lantadyme",
+      "secondary": "Dragon Scale Dust",
+      "xp": 157.5,
+      "secondary_source": "Grind Blue Dragon Scales — Blue Dragons in Taverley Dungeon or Ogre Enclave",
+      "use": "Partial dragonfire protection — essential for Blue/Red Dragons and Vorkath runs"
+    },
+    {
+      "level": 72,
+      "name": "Ranging Potion",
+      "herb": "Dwarf Weed",
+      "secondary": "Wine of Zamorak",
+      "xp": 162.5,
+      "secondary_source": "Chaos Temple (Wilderness telegrab) or kill Monks of Zamorak in Varrock",
+      "use": "Essential Ranged boost — meta for Slayer, Zulrah, Vorkath, and Theatre of Blood"
+    },
+    {
+      "level": 76,
+      "name": "Magic Potion",
+      "herb": "Lantadyme",
+      "secondary": "Potato Cactus",
+      "xp": 172.5,
+      "secondary_source": "Kalphite Lair, Uzer ruins, or farm Potato Cactus plants (68 Farming)",
+      "use": "Magic level boost — essential for Burst/Barrage Slayer tasks and high-level Magic use"
+    },
+    {
+      "level": 77,
+      "name": "Stamina Potion",
+      "herb": "Amylase Crystal",
+      "secondary": "Super Energy (4)",
+      "xp": 102.0,
+      "secondary_source": "Amylase Crystals from Brimhaven Agility Arena (10 crystals = 1 potion)",
+      "use": "Meta farming run potion — prevents energy drain for 2 min. Farm run essential"
+    },
+    {
+      "level": 81,
+      "name": "Saradomin Brew",
+      "herb": "Toadflax",
+      "secondary": "Crushed Nest",
+      "xp": 180.0,
+      "secondary_source": "Crush bird nests with pestle — nests from Birdhouse runs (74 Farming + 5 Hunter)",
+      "use": "Best ironman healing potion — heals above max HP. Always pair with Super Restores"
+    },
+    {
+      "level": 85,
+      "name": "Extended Antifire",
+      "herb": "Lantadyme",
+      "secondary": "Antifire Potion (4)",
+      "xp": 110.0,
+      "secondary_source": "Combine Antifire Potion (4) with Lantadyme leaf — requires Antifire stock",
+      "use": "12-min dragonfire protection vs standard 6 min — very efficient for Vorkath runs"
+    },
+    {
+      "level": 90,
+      "name": "Anti-venom+",
+      "herb": "Torstol",
+      "secondary": "Anti-venom (4)",
+      "xp": 125.0,
+      "secondary_source": "Anti-venom made from Zulrah's scales + Antidote++ — base requires 87 Herblore",
+      "use": "Full venom immunity — essential for Zulrah farming and venom-heavy Slayer tasks"
+    }
+  ]
+}

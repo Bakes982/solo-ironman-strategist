@@ -1,0 +1,30 @@
+# Gradle
+.gradle/
+build/
+out/
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Compiled class files (stray)
+net/
+*.class
+
+# Local machine config (JDK path is machine-specific)
+gradle.properties
+local.properties
+
+# Claude Code project memory (machine-specific, not for contributors)
+.claude/
+
+# Plugin prototype stubs (not part of the submission)
+plugin/
+backend/

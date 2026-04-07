@@ -1,0 +1,10 @@
+# Copy this file to gradle.properties and set org.gradle.java.home if needed.
+#
+# Gradle 8+ requires JVM 17+ to run (the plugin itself targets Java 11 source/target).
+# If your system JAVA_HOME / PATH java is older than 17, uncomment and adjust:
+#
+# org.gradle.java.home=/path/to/jdk17+
+#
+# macOS (Homebrew):   /opt/homebrew/opt/openjdk@21
+# Windows (Adoptium): C:\Program Files\Eclipse Adoptium\jdk-21.x.y.z-hotspot
+# Linux:              /usr/lib/jvm/java-21-openjdk-amd64

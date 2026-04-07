@@ -1,0 +1,665 @@
+{
+  "guide_milestones": [
+    {
+      "id": "sailing_pandemonium",
+      "category": "SAILING",
+      "priority": 0,
+      "title": "Pandemonium — Unlock Sailing",
+      "trigger_quest": "PANDEMONIUM",
+      "trigger_skill": "SAILING",
+      "trigger_level": 5,
+      "tip": "Complete 'Pandemonium' (no skill requirements) to receive your free Starter Sloop from the Port Sarim Shipwright. Immediately assign a crew member to the Supply dock role before logging out for passive resource collection. Run Courier Voyages until Sailing 20 to unlock the Dinghy upgrade path — Courier tasks give the best early XP/hr and produce crafting rope, navigation charts and cooking fish passively. Essential 2026 meta unlock."
+    },
+    {
+      "id": "waterfall_quest",
+      "category": "QUESTS",
+      "priority": 1,
+      "title": "Waterfall Quest — Skip 30 Combat Levels",
+      "trigger_quest": "WATERFALL_QUEST",
+      "trigger_skill": "ATTACK",
+      "trigger_level": 30,
+      "tip": "Do Waterfall Quest first — no combat required. Rewards 13,750 Attack XP and 13,750 Strength XP, jumping straight to Attack/Strength 30. Also start Rune Mysteries (Magic access) and Children of the Sun (early quest XP + Varlamore portal unlock)."
+    },
+    {
+      "id": "prayer_43",
+      "category": "COMBAT",
+      "priority": 2,
+      "title": "Prayer 43 — Unlock Protection Prayers",
+      "trigger_skill": "PRAYER",
+      "trigger_level": 43,
+      "tip": "Prayer 43 unlocks Protect from Melee/Missiles/Magic — essential for every boss and hard Slayer task going forward. Farm big bones from hill giants at Edgeville dungeon. Complete The Restless Ghost + Priest in Peril + Nature Spirit for bonus Prayer XP and Morytania altar access."
+    },
+    {
+      "id": "agility_50",
+      "category": "SKILLS",
+      "priority": 3,
+      "title": "Agility 50 — Rogue's Den + Graceful Outfit",
+      "trigger_skill": "AGILITY",
+      "trigger_level": 50,
+      "tip": "Agility 50 unlocks the Rogue's Den maze — complete it for the full Rogue's outfit (doubles all pickpocket loot). Collect Marks of Grace along the way: Graceful outfit (260 marks total) cuts weight by ~25kg, massively improving run energy on farm runs and long Slayer tasks. Path: Draynor (20) → Al Kharid (30) → Varrock (40) → Canifis (50)."
+    },
+    {
+      "id": "rogues_outfit",
+      "category": "FOUNDATION",
+      "priority": 4,
+      "title": "Rogue's Outfit — Solve the Coin Problem",
+      "trigger_item": 5554,
+      "trigger_skill": "THIEVING",
+      "trigger_level": 55,
+      "tip": "With Agility 50, complete the Rogue's Den maze for the full Rogue's outfit. Train Thieving: Men pickpockets (1-25) → Ardougne baker stalls (25-42) → Hosidius fruit stalls (42-55+). Then use the outfit for H.A.M. Storeroom pickpockets — keys drop gems (sapphire to diamond) for all your teleport jewelry needs as an Ironman."
+    },
+    {
+      "id": "fishing_food",
+      "category": "FOUNDATION",
+      "priority": 5,
+      "title": "Karambwans — Solve the Food Problem",
+      "trigger_quest": "TAI_BWO_WANNAI_TRIO",
+      "trigger_skill": "FISHING",
+      "trigger_level": 65,
+      "tip": "Karambwans (Fishing 65, shop at Tiadeche in Tai Bwo Wannai) are the Ironman combo-eat staple. Unlock via Tai Bwo Wannai Trio quest. Train fishing at Tempoross (35+) for raw fish + rewards including the Fish Barrel (doubles trip length). Never drop raw fish — every fish is future cooking XP and food."
+    },
+    {
+      "id": "herb_runs",
+      "category": "SKILLS",
+      "priority": 6,
+      "title": "Herb Runs — Start Farming Ranarrs",
+      "trigger_skill": "FARMING",
+      "trigger_level": 32,
+      "tip": "Start herb runs the moment you can. ALWAYS plant Ranarrs in Disease-Free patches at Troll Stronghold and Weiss — never risk your Prayer Pot supply to disease. Unlock 6 patches via quests (Fairy Tale I & II are highest priority). Do Farming Contracts at the Guild continuously for bonus seeds + extra XP per run."
+    },
+    {
+      "id": "essential_quests",
+      "category": "QUESTS",
+      "priority": 7,
+      "title": "Combat Quest Chain — Skip the Grind",
+      "trigger_quest": "MONKEY_MADNESS_I",
+      "trigger_skill": "ATTACK",
+      "trigger_level": 60,
+      "tip": "Quest XP beats grinding every time. Priority order: Fight Arena (12K Atk XP) → Tree Gnome Village (11K Atk XP) → The Grand Tree (18K Atk XP) → Dragon Slayer I (18K Str+Def) → Monkey Madness I (35K Atk+Def, 20K Str). Ranged: Death to the Dorgeshuun → Contact! (14K Ranged XP). Get Goldsmith Gauntlets (Family Crest) for Smithing."
+    },
+    {
+      "id": "avas_device",
+      "category": "GEAR",
+      "priority": 8,
+      "title": "Ava's Device — Auto-Collect Your Ammo",
+      "trigger_quest": "ANIMAL_MAGNETISM",
+      "trigger_skill": "RANGED",
+      "trigger_level": 50,
+      "tip": "Complete Ernest the Chicken (no requirements) then Animal Magnetism (Ranged 30, Slayer 18, Crafting 18, Farming 15) for Ava's Accumulator — collects ~70% of your ammo automatically. Upgrade to Ava's Assembler at 70 Ranged via Monkey Madness II. Without it you're burning through ammo needlessly on every task."
+    },
+    {
+      "id": "hunter_moths",
+      "category": "FOUNDATION",
+      "priority": 9,
+      "title": "Hunter 75 — Moonlight Moth Mixes",
+      "trigger_skill": "HUNTER",
+      "trigger_level": 75,
+      "tip": "Solve prayer restoration permanently. Get tasks from any Hunter Guild NPC in Varlamore (Hunter Rumours scale to your level). Push to Hunter 75 via Varlamore rumours. At 75 you can catch Moonlight Moths — their Mixes restore prayer points without Ranarrs, freeing your herb patches for Super Attacks and other products. Moonlight Moth Mixes are the 2026 meta replacement for Prayer Potions on extended Slayer tasks."
+    },
+    {
+      "id": "dragon_defender",
+      "category": "GEAR",
+      "priority": 10,
+      "title": "Dragon Defender — Best Offhand Pre-Void",
+      "trigger_item": 12954,
+      "trigger_skill": "ATTACK",
+      "trigger_level": 65,
+      "tip": "Requires Attack 65 + Strength 65 to enter Warriors Guild. Kill animated mithril armour (bring an adamant halberd, efficient) for Warrior Tokens. Spend tokens in basement cyclopes room: progress bronze → rune defenders downstairs, then grind cyclopes upstairs for the Dragon Defender. Best melee offhand until Avernic Defender."
+    },
+    {
+      "id": "slayer_helmet",
+      "category": "GEAR",
+      "priority": 11,
+      "title": "Slayer Helmet — 400 Points, Worth Every One",
+      "trigger_item": 11864,
+      "trigger_skill": "SLAYER",
+      "trigger_level": 1,
+      "tip": "The Slayer Helmet is a permanent 15% accuracy and damage bonus on all Slayer tasks — it is the single best upgrade per Slayer point you will ever spend (400 points). Unlock it before spending points on anything else. Craft it from a Black Mask (Caves) + Nose Peg + Earmuffs + Spiny Helmet + Facemask. Once crafted, imbue it at the NMZ reward shop (1,250,000 points) for a further +15% ranged/magic bonus on task."
+    },
+    {
+      "id": "slayer_55",
+      "category": "SKILLS",
+      "priority": 12,
+      "title": "Slayer 55 — Unlock Broad Arrowheads",
+      "trigger_skill": "SLAYER",
+      "trigger_level": 55,
+      "tip": "Slayer 55 unlocks Broad Arrowheads from any Slayer Master (225 for 10gp, incredible value). Fletch them into Broad Arrows (Fletching 52 req, 15 XP each) during herb runs and banking — completely free Fletching XP. Always keep 5,000+ arrowheads banked. Nechryaels and Aberrant Spectres also drop herb seeds passively on tasks."
+    },
+    {
+      "id": "melee_70",
+      "category": "COMBAT",
+      "priority": 13,
+      "title": "70/70/70 Melee — Barrows Ready",
+      "trigger_skill": "STRENGTH",
+      "trigger_level": 70,
+      "tip": "70 Attack/Strength/Defence makes Barrows viable for consistent gear piece drops (Dharok, Ahrim, Karil sets). Train almost entirely through Slayer — you earn Slayer XP, herb and seed drops, and combat XP simultaneously. Pick up Berserker Helm (Fremennik Trials) and Neitiznot Helm (Fremennik Isles, Def 55) along the way."
+    },
+    {
+      "id": "fletching_74",
+      "category": "SKILLS",
+      "priority": 14,
+      "title": "Fletching 74 — Hunters' Sunlight Crossbow",
+      "trigger_skill": "FLETCHING",
+      "trigger_level": 74,
+      "tip": "Your Ironman MSB(i) upgrade — higher ranged DPS for Slayer tasks. Attach a Sunlight antelope antler (from Varlamore Sunlight Antelopes, ID 29168) to any Hunters' crossbow at 74 Fletching. Train via the Vale Totems minigame in Varlamore: get the Fletching Knife reward from Vale Research Points first, it dramatically speeds up the process."
+    },
+    {
+      "id": "mage_training_arena",
+      "category": "SKILLS",
+      "priority": 15,
+      "title": "Mage Training Arena — Bones to Peaches",
+      "trigger_skill": "MAGIC",
+      "trigger_level": 55,
+      "tip": "Bones to Peaches (MTA reward) converts all bones during Barrows runs into food — eliminates food dependency. Top priority reward over everything else. Also grab the Rune Pouch (saves 2 inventory slots every trip) and Infinity Boots. Budget: ~2,500 nature runes, 900 law runes, 1,000 cosmic runes for the full grind."
+    },
+    {
+      "id": "morytania_hard_diary",
+      "category": "QUESTS",
+      "priority": 16,
+      "title": "Morytania Hard Diary — 50% More Barrows Runes",
+      "trigger_skill": "AGILITY",
+      "trigger_level": 71,
+      "tip": "Morytania Legs 3 gives 50% more runes from Barrows chests, a Barrows teleport, and unlimited teleports to Canifis/Port Phasmatys. Requirements: Construction 50 (do ~50 Mahogany Homes novice contracts), Agility 71 (Colossal Wyrm advanced course in Varlamore), Slayer 60, Smithing 50 (Giants' Foundry), Crafting 47, Firemaking 50. A massive Barrows efficiency upgrade."
+    },
+    {
+      "id": "varlamore_access",
+      "category": "QUESTS",
+      "priority": 17,
+      "title": "Children of the Sun — Unlock Varlamore",
+      "trigger_quest": "CHILDREN_OF_THE_SUN",
+      "tip": "Children of the Sun unlocks Varlamore — the 2026 meta hub. Do it early. Varlamore gives access to: Hunter Guild (Rumour tasks that scale to your level), Colosseum of Fortune (late-game ranged BIS), Moonlight Moth catching (Hunter 75, prayer restoration without Ranarrs), Sunlight Antelope hunting (antler for Sunlight Crossbow), Vale Totem activities and the Colossal Wyrm agility course (required for Morytania Hard Diary at 71 Agility)."
+    },
+    {
+      "id": "hunter_guild_rumours",
+      "category": "SKILLS",
+      "priority": 18,
+      "title": "Hunter Guild — Start Rumour Tasks",
+      "trigger_skill": "HUNTER",
+      "trigger_level": 9,
+      "tip": "Visit the Hunter Guild in Varlamore the moment you have Hunter 9. Speak to any Guild NPC to receive a Rumour task — Hunter assignments that scale to your current level and award loot bags on completion. These bags contain seeds, gems and Varlamore-specific materials on top of base Hunter XP. Always have an active Rumour when training Hunter. The plugin HUD overlay tracks your current Rumour target in real time."
+    },
+    {
+      "id": "sailing_caravel",
+      "category": "SKILLS",
+      "priority": 19,
+      "title": "Sailing 40 — Caravel Tier Unlocked",
+      "trigger_skill": "SAILING",
+      "trigger_level": 40,
+      "tip": "Sailing 40 unlocks Caravel-class ships — a major upgrade over the starting Dinghy. Upgrade hull and sails with Port Sarim Shipwright materials. Caravel routes unlock Rosewood Planks (stack 200+ for Construction training), Sailing Halibut (20 HP heal — replaces Sharks as your primary Slayer food), and mid-tier crew members. Focus Barracuda Trials from 60 Sailing for the best combined XP and resource return per hour."
+    },
+    {
+      "id": "colosseum_prep",
+      "category": "COMBAT",
+      "priority": 20,
+      "title": "Colosseum of Fortune — Dizana's Quiver Prep",
+      "trigger_skill": "RANGED",
+      "trigger_level": 90,
+      "tip": "The Colosseum of Fortune in Varlamore rewards Dizana's Quiver — best-in-slot ranged ammo holder. Requires: 90+ Ranged, 80+ Prayer, high-quality armour (Masori or equivalent), and memorised mechanics for all 12 invocations. Use the Sunlight Crossbow + Zaryte Vambraces while building toward this. Study each Sol Heredit phase before your first attempt — this is Inferno-tier content."
+    },
+    {
+      "id": "sailing_galleon",
+      "category": "SKILLS",
+      "priority": 21,
+      "title": "Sailing 70 — Galleon + Long Haul Routes",
+      "trigger_skill": "SAILING",
+      "trigger_level": 70,
+      "tip": "Sailing 70 unlocks Galleon-class ships — the endgame vessel. Long Haul Routes to distant island chains give 100K+ XP/hr and deliver Sailing Halibut in bulk, Ironwood Planks, and rare ship components. At this tier your crew efficiency is high enough to sustain automated supply collection between logins. Combine 60% Long Haul Routes with 40% Barracuda Trials for maximum XP efficiency. Complete all Port Supply quests for permanent crew XP bonuses."
+    },
+    {
+      "id": "zombie_axe",
+      "category": "GEAR",
+      "priority": 22,
+      "title": "Zombie Axe — BIS Bridge Weapon",
+      "trigger_quest": "DEFENDER_OF_VARROCK",
+      "trigger_item": 28810,
+      "trigger_skill": "ATTACK",
+      "trigger_level": 65,
+      "tip": "Complete Defender of Varrock (requires: Varrock Diary partial, 65 Attack, 65 Strength, access to Zemouregal's Fort) to unlock the Zombie Axe — the best-in-slot two-handed melee weapon between Dragon Scimitar and Abyssal Whip. The Zombie Axe has identical stats to a Rune Scimitar but with a +6 Strength bonus, making it a significant upgrade. No other item comes close for mid-game Slayer until you get the Whip. Complete the quest as soon as you hit 65 Attack."
+    },
+    {
+      "id": "scorching_bow",
+      "category": "GEAR",
+      "priority": 23,
+      "title": "Scorching Bow — BIS Ranged Pre-BOWFA",
+      "trigger_skill": "SLAYER",
+      "trigger_level": 92,
+      "tip": "Slayer 92 unlocks Araxxor tasks from Konar or Duradel. Araxxor drops the Synapse — combine it with a Magic Shortbow to create the Scorching Bow (Fletching 85 required). The Scorching Bow fires up to 2 arrows per attack at no extra cost, giving substantially higher Ranged DPS than any bow before Bow of Faerdhinen. It fires standard arrows (use Amethyst or Rune). Best-in-slot ranged weapon from mid-game through Corrupted Gauntlet prep. Extend Araxxor tasks via Slayer points — the Synapse drop rate is 1/196 on-task."
+    }
+  ],
+  "efficiency_tips": [
+    {
+      "trigger_skill": "SAILING",
+      "trigger_level": 1,
+      "tip": "Collect your free Dinghy from the Port Sarim Shipwright immediately — no cost required. Prioritise the starter coastal voyage to unlock your first crew member. Even early Coastal Routes produce useful Ironman resources: fish for cooking XP, navigation charts and basic crafting rope. Assign a crew member to the Supply dock role before logging out for passive income."
+    },
+    {
+      "trigger_skill": "SAILING",
+      "trigger_level": 40,
+      "tip": "Caravel upgrade: invest Sailing resources in hull reinforcement and larger sails first — they improve trip duration and cargo capacity. At 40 Sailing switch from Coastal to Island Exploration routes for double the XP rate. Begin stockpiling Rosewood Planks (Construction training) and Sailing Halibut (Slayer food) now — your bank will thank you."
+    },
+    {
+      "trigger_skill": "SAILING",
+      "trigger_level": 60,
+      "tip": "Prioritise Barracuda Trials for the best Sailing XP/Hour for Ironmen — grants Ironman-friendly combat resources alongside XP. Don't bother with standard resource runs as your primary Sailing activity until 70+ Sailing, when Galleon-class Long Haul Routes overtake them in efficiency."
+    },
+    {
+      "trigger_skill": "HERBLORE",
+      "trigger_level": 60,
+      "tip": "Use the Alchemist Amulet from Herblore Mixology (Varlamore minigame) for a 15% chance at 4-dose potions when mixing. A significant XP and dose efficiency boost for high-level Herblore. Also craft Moonlight Moth Mixes at 75 Hunter for prayer restoration without spending Ranarrs — the 2026 meta prayer solution."
+    },
+    {
+      "trigger_skill": "HUNTER",
+      "trigger_level": 9,
+      "tip": "Pick up a Rumour task from the Hunter Guild in Varlamore immediately. Rumour loot bags scale with your level — even early tasks award bonus seeds and materials on top of regular Hunter XP. Always have a Rumour active when training Hunter. Check the HUD overlay to track your active Rumour target at a glance."
+    },
+    {
+      "trigger_skill": "HUNTER",
+      "trigger_level": 70,
+      "tip": "Switch to Varlamore Hunter Rumours from the Hunter Guild. Loot bags scale with your level and at 75 Hunter you can catch Moonlight Moths — the meta prayer restoration source. Moonlight Moth Mixes restore prayer without Ranarrs, completely freeing your herb patches for Super Attacks and Saradomin Brews."
+    },
+    {
+      "trigger_skill": "FLETCHING",
+      "trigger_level": 74,
+      "tip": "You can now craft the Hunters' Sunlight Crossbow. Attach a Sunlight antelope antler (ID 29168) to any Hunters' crossbow for a superior ranged weapon — higher DPS than MSB(i) for Slayer. Your best-in-slot ranged weapon until Scorching Bow or Bow of Faerdhinen."
+    },
+    {
+      "trigger_skill": "FLETCHING",
+      "trigger_level": 85,
+      "tip": "Fletching 85 unlocks the Scorching Bow. If you have a Synapse from Araxxor (Slayer 92 task), attach it to a Magic Shortbow now — the Scorching Bow fires up to 2 arrows per shot at no cost and is your best-in-slot ranged weapon until BOWFA. Even without the Synapse, Fletching 85 opens Magic Longbows for high-volume alching."
+    },
+    {
+      "trigger_skill": "FARMING",
+      "trigger_level": 32,
+      "tip": "Always use Disease-Free patches at Troll Stronghold and Weiss for Ranarr seeds — never risk disease on your Prayer Pot supply. Run Farming Contracts at the Guild continuously for bonus seeds, extra XP, and the chance at snapdragon/toadflax from contract rewards."
+    },
+    {
+      "trigger_skill": "SLAYER",
+      "trigger_level": 50,
+      "tip": "Slayer Helmet (400 points) is your single highest-priority Slayer reward — it gives 15% accuracy AND damage on every Slayer task. Do NOT spend points on anything else first. Craft it from: Black Mask (Cave Horrors, Slayer 58) + Nose Peg + Earmuffs + Spiny Helmet + Facemask. Once crafted, imbue it at NMZ for 1,250,000 points — the imbue adds +15% ranged and magic bonus on task, making it best-in-slot for all three combat styles on task."
+    },
+    {
+      "trigger_skill": "SLAYER",
+      "trigger_level": 55,
+      "tip": "Buy Broad Arrowheads from Slayer Masters (225 per 10gp) and fletch Broad Arrows (15 XP each at 52 Fletching) during herb runs and banking. Completely free Fletching XP that adds up to millions of XP over an Ironman's lifetime."
+    },
+    {
+      "trigger_skill": "AGILITY",
+      "trigger_level": 20,
+      "tip": "Collect Marks of Grace on every rooftop course you train. The full Graceful Outfit costs 260 marks total and reduces weight by ~25kg — dramatically extending run energy during farm runs, herb running, and Slayer task travel."
+    },
+    {
+      "trigger_skill": "AGILITY",
+      "trigger_level": 60,
+      "tip": "Use Stamina Potions on long Slayer tasks — stock Avantoe + Mort Myre Fungus (Silver Sickle (b) blooming in Morytania). Drakan's Medallion for fast Morytania banking. At 66+ Agility, the Hallowed Sepulchre gives the best Agility XP rates in the game."
+    },
+    {
+      "trigger_skill": "AGILITY",
+      "trigger_level": 71,
+      "tip": "The Colossal Wyrm advanced course in Varlamore (Agility 71) is a requirement for the Morytania Hard Diary — Morytania Legs 3 grants 50% more Barrows rune drops and a permanent Barrows teleport. Train the course to satisfy the diary requirement, then return to Hallowed Sepulchre for maximum XP."
+    },
+    {
+      "trigger_skill": "THIEVING",
+      "trigger_level": 40,
+      "tip": "With the full Rogue's outfit, pickpocket H.A.M. Members for H.A.M. Storeroom keys. Use keys in Lumbridge cellar storerooms for a chance at gems (sapphire through diamond) — your primary source of teleport jewelry as an Ironman when you can't buy from the GE."
+    },
+    {
+      "trigger_skill": "MAGIC",
+      "trigger_level": 55,
+      "tip": "High Level Alchemy converts drops and crafted items to GP. Maple Longbows (Fletching 55: 1 maple log + 1 bowstring) are the Ironman's go-to alch item. Fletch and alch during herb runs or Slayer tasks for passive GP — you can alch at any time with 5 Nature Runes."
+    },
+    {
+      "trigger_skill": "RANGED",
+      "trigger_level": 40,
+      "tip": "The Crazy Archaeologist in Wilderness Ruins drops Rune Crossbows (1/128). Alternatively buy limbs from Slayer Tower stores. Pair with Broad Bolts (Slayer reward shop, 100 points per 250 bolts) for affordable, high-damage ranged on Slayer tasks."
+    },
+    {
+      "trigger_skill": "RANGED",
+      "trigger_level": 90,
+      "tip": "Prepare for the Colosseum of Fortune in Varlamore — awards Dizana's Quiver (best-in-slot ranged ammo holder). Study all 12 invocations before your first attempt. Use Sunlight Crossbow as your ranged weapon going in. The Colosseum is comparable to Inferno in difficulty — proper preparation prevents repeated early failures."
+    },
+    {
+      "trigger_skill": "WOODCUTTING",
+      "trigger_level": 29,
+      "tip": "Set up Birdhouse runs on Fossil Island (requires Bone Voyage quest). Check every 50 minutes for passive Hunter XP + bird nests containing herb and tree seeds. Takes under 3 minutes per run — do it any time you log in and it compounds massively over a full Ironman account."
+    },
+    {
+      "trigger_skill": "PRAYER",
+      "trigger_level": 43,
+      "tip": "The Chaos Altar in level 38 Wilderness gives 3.5x prayer XP per bone vs 1x on regular altars. Bring noted bones + coins for the nearby chaos druid to un-note them at 50gp each. High risk but extremely high reward for bulk prayer training — the fastest method available to Ironmen."
+    },
+    {
+      "trigger_skill": "FARMING",
+      "trigger_level": 45,
+      "tip": "Pickpocket Master Farmers wearing the full Rogue's outfit for the best seed income per hour. The Farming Guild has a Master Farmer right outside the entrance. Ranarr, snapdragon, and torstol seeds from pickpocketing can fund your entire Herblore supply long-term."
+    },
+    {
+      "trigger_skill": "DEFENCE",
+      "trigger_level": 30,
+      "tip": "Ammonite Crabs on Fossil Island (after Bone Voyage quest) are the best AFK melee training available — 10 HP, insta-respawn nearby, and high combat density. Ideal for reaching 60-70 melee stats with minimal attention. Collect Fossil Island noted fish from the swamp water chest nearby while training."
+    },
+    {
+      "trigger_skill": "SLAYER",
+      "trigger_level": 75,
+      "tip": "Extend profitable Slayer tasks (Abyssal Demons, Nechryaels, Gargoyles) and block tasks with poor drops and low XP/hr (Hellhounds, Kalphites, Dagannoths). Use Slayer points to unlock Bigger and Badder (Boss Slayer) for Abyssal Sire, Cerberus, and Grotesque Guardians — major upgrade sources. Never extend tasks below 70k XP/hr unless they drop a specific item you need."
+    },
+    {
+      "trigger_skill": "SLAYER",
+      "trigger_level": 92,
+      "tip": "Slayer 92 unlocks Araxxor — extend this task via Slayer points. Araxxor drops the Synapse (1/196 on task, ~1/400 off task) which combines with a Magic Shortbow to create the Scorching Bow at Fletching 85. The Scorching Bow is your best-in-slot ranged weapon until BOWFA. Keep Araxxor on your block/extend list accordingly: extend it until you have the Synapse, then block it and prioritise other tasks."
+    }
+  ],
+  "herblore_efficiency": [
+    {
+      "herb": "Irit",
+      "secondary": "Eye of Newt",
+      "secondary_item_id": 221,
+      "source": "Buy from Herblore shops at Jatizso or Taverley (1000 stock each)",
+      "tip": "The Ironman bulk XP herb. Attack Potions are fast to make and Eye of Newt is always in stock. Never skip an Irit seed drop — always buy out the Eye of Newt shop when visiting Jatizso or Taverley."
+    },
+    {
+      "herb": "Ranarr",
+      "secondary": "Snape Grass",
+      "secondary_item_id": 231,
+      "source": "Farm Snape Grass at Waterbirth Island or Hosidius allotment patch",
+      "tip": "Prioritize Ranarrs ONLY in Disease-Free patches (Troll Stronghold and Weiss). Snape Grass is the bottleneck — farm it at both allotment locations on every herb run. At Hunter 75, replace Prayer Pots with Moonlight Moth Mixes and redirect Ranarrs to Super Attacks."
+    },
+    {
+      "herb": "Avantoe",
+      "secondary": "Mort Myre Fungus",
+      "secondary_item_id": 464,
+      "source": "Bloom logs in Morytania swamp with a Silver Sickle (b) from Nature Spirit quest",
+      "tip": "Essential for Super Energy Potions (117.5 XP each, Herblore 52). Use Drakan's Medallion for instant banking after blooming. Bloom multiple logs per visit to batch your Fungus supply efficiently."
+    },
+    {
+      "herb": "Moonlight Moth (Hunter 75)",
+      "secondary": "N/A — single ingredient",
+      "secondary_item_id": 0,
+      "source": "Catch Moonlight Moths in Varlamore moonlit hunting grounds (Hunter 75, trap required)",
+      "tip": "The 2026 meta prayer restoration method. Moonlight Moth Mixes restore prayer points without Ranarrs or Snape Grass. At Hunter 75+, use Moth Mixes on all extended Slayer tasks and free your Ranarrs exclusively for Super Attack Potions. Prioritise reaching Hunter 75 via Varlamore Rumour tasks as fast as possible."
+    }
+  ],
+  "food_progression": [
+    {
+      "level_range": "1-50",
+      "item": "Cheesy Potato",
+      "location": "Warriors Guild (9gp each, always in stock)",
+      "efficiency": "High-heal food for early-mid game questing and bossing. Cheap, always in stock, no cooking requirement."
+    },
+    {
+      "level_range": "65-99",
+      "item": "Karambwan",
+      "location": "Tiadeche's Shop in Tai Bwo Wannai (Fishing 65 unlock)",
+      "efficiency": "Standard combo-eat food. Use with a Fish Barrel for 2x trip length on Slayer tasks. The shop restocks over time — buy the full stock on every visit."
+    },
+    {
+      "level_range": "40-99",
+      "item": "Sailing Halibut",
+      "location": "Sailing resource routes — Caravel tier (Sailing 40+)",
+      "efficiency": "20 HP heal per fish — replaces Sharks as the primary Ironman Slayer food at 40 Sailing. Collected passively from Caravel and Galleon resource runs. Stack in bank and use as your main food supply from mid-game onward."
+    },
+    {
+      "level_range": "90-99",
+      "item": "Moonlight Antelope / High-heal Sailing fish",
+      "location": "Varlamore hunting grounds / Galleon Long Haul Routes",
+      "efficiency": "End-game food tier. Moonlight Antelope from Varlamore hunting gives high heals. Combine with Saradomin Brews for max-efficiency bossing setups."
+    }
+  ],
+  "fletching_essentials": [
+    {
+      "item": "Hunters' sunlight crossbow",
+      "req_level": 74,
+      "materials": "Sunlight antelope antler (ID 29168) + Hunters' crossbow (any tier)",
+      "tip": "Your Ironman MSB(i) upgrade — higher ranged DPS for all Slayer tasks. Sunlight antelope antlers drop from Sunlight Antelopes in Varlamore. Attach the antler to any Hunters' crossbow at 74 Fletching."
+    },
+    {
+      "item": "Broad Arrows",
+      "req_level": 52,
+      "source": "Broad Arrowheads from any Slayer Master (225 per 10gp at 55 Slayer)",
+      "tip": "Best zero-time Fletching XP. Fletch during herb runs, banking, or any idle moment. Each arrow is 15 XP — buy in stacks of 5,000+ to always have supply ready."
+    }
+  ],
+  "shopscape_hotspots": [
+    {
+      "item": "Gold Ore",
+      "location": "Ordan at Blast Furnace or the Blast Mine south of Lovakengj",
+      "usage": "Fastest Smithing XP using Goldsmith Gauntlets (Family Crest quest reward). Always buy out the full stock."
+    },
+    {
+      "item": "Buckets of Sand",
+      "location": "Bert (daily 84 buckets) / Yanille Sandpit",
+      "tip": "In 2026 use the Mining Sand method in the desert with Cam Dozaal buffs for faster Crafting XP and better sand rates."
+    },
+    {
+      "item": "Eye of Newt",
+      "location": "Jatizso Herblore Shop / Taverley Herblore Shop (1000 stock each)",
+      "tip": "Always buy a full stock (1000) when visiting either shop. Your Irit-to-Attack-Potion pipeline depends entirely on consistent Eye of Newt supply."
+    }
+  ],
+  "money_making_methods": [
+    {
+      "id": "ham_storeroom",
+      "title": "H.A.M. Storeroom",
+      "category": "SKILLING",
+      "gp_hr": 80000,
+      "reqs": {
+        "THIEVING": 55
+      },
+      "req_quests": [],
+      "tip": "Pickpocket H.A.M. Members for keys, then loot the Storeroom chests in Lumbridge cellar. Drops uncut gems (sapphire to diamond) — your primary source of teleport jewellery. Wear the full Rogue's outfit for double loot. Best early-game resource income available to an Ironman."
+    },
+    {
+      "id": "master_farmer",
+      "title": "Master Farmer Pickpocket",
+      "category": "SKILLING",
+      "gp_hr": 150000,
+      "reqs": {
+        "THIEVING": 38,
+        "FARMING": 45
+      },
+      "req_quests": [],
+      "tip": "Pickpocket the Master Farmer outside the Farming Guild (requires Farming 45 to enter). Drops Ranarr, Snapdragon, Torstol and other high-value seeds — funds your entire Herblore pipeline for free. Wear the full Rogue's outfit to double all loot. ~5-6 Ranarr seeds/hr on average."
+    },
+    {
+      "id": "fruit_stall",
+      "title": "Hosidius Fruit Stalls",
+      "category": "SKILLING",
+      "gp_hr": 120000,
+      "reqs": {
+        "THIEVING": 25
+      },
+      "req_quests": [],
+      "tip": "Steal from Fruit Stalls in Hosidius (requires 15% Hosidius favour). Produces Cooking secondaries (Pineapples, Papayas, Dragonfruit) useful for Cooking XP and supply. Low attention, good early coin. Pair with nearby bank for efficiency."
+    },
+    {
+      "id": "nature_runes",
+      "title": "Nature Runes (Abyss)",
+      "category": "SKILLING",
+      "gp_hr": 250000,
+      "reqs": {
+        "RUNECRAFT": 44
+      },
+      "req_quests": [
+        "ENTER_THE_ABYSS"
+      ],
+      "tip": "Craft Nature Runes via the Abyss (requires Enter the Abyss miniquest). Use a Giant Pouch (Runecrafting 75 for max) to maximise runes per trip. Nature Runes are consumed by High Alch and enchanting — at 44 RC you produce them faster than you spend them, completely eliminating that cost."
+    },
+    {
+      "id": "death_runes",
+      "title": "Death Runes (Abyss)",
+      "category": "SKILLING",
+      "gp_hr": 400000,
+      "reqs": {
+        "RUNECRAFT": 65
+      },
+      "req_quests": [
+        "ENTER_THE_ABYSS"
+      ],
+      "tip": "Death Runes (Runecrafting 65) via the Abyss. Used in combat spells (Death Charge, Death Coil) and Barrows magic. Significantly more valuable than Nature Runes per essence. At 65 RC with a Colossal Pouch you produce enough to sustain all Magic training needs plus surplus to alch with."
+    },
+    {
+      "id": "blood_runes",
+      "title": "Blood Runes (Arceuus)",
+      "category": "SKILLING",
+      "gp_hr": 500000,
+      "reqs": {
+        "RUNECRAFT": 77,
+        "MINING": 38,
+        "CRAFTING": 38,
+        "AGILITY": 73
+      },
+      "req_quests": [],
+      "tip": "Craft Blood Runes at the Blood Altar in Arceuus. Requires 100% Arceuus favour, 77 Runecrafting, 38 Mining, 38 Crafting, and 73 Agility (for the shortcut that makes it viable). Uses Dense Essence Blocks mined from the Dark Altar area — gather a full inventory, craft them into Blood Runes at the altar. One of the best passive resource generators in the game at this level."
+    },
+    {
+      "id": "soul_runes",
+      "title": "Soul Runes (Arceuus)",
+      "category": "SKILLING",
+      "gp_hr": 600000,
+      "reqs": {
+        "RUNECRAFT": 90,
+        "MINING": 38,
+        "CRAFTING": 38,
+        "AGILITY": 73
+      },
+      "req_quests": [],
+      "tip": "Soul Runes (Runecrafting 90) at the Soul Altar in Arceuus. Same Dense Essence Block method as Blood Runes but higher value output. Soul Runes are used in Thralls, Resurrection spells, and Barrows. Best consistent Runecrafting income available. Requires 73 Agility for the southern shortcut — without it the method is too slow."
+    },
+    {
+      "id": "barrows",
+      "title": "Barrows Runs",
+      "category": "COMBAT",
+      "gp_hr": 400000,
+      "reqs": {
+        "PRAYER": 43,
+        "MAGIC": 50,
+        "DEFENCE": 70
+      },
+      "req_quests": [
+        "PRIEST_IN_PERIL"
+      ],
+      "tip": "6 brothers per run, chest contains ~7,000gp in runes plus a chance at Barrows pieces (200K-2M each). ~300-500K GP/hr depending on gear and speed. Use Iban Blast (Magic 50) or a Trident. Morytania Legs 3 gives 50% more runes per chest — prioritise that diary. Bones to Peaches (MTA) eliminates food cost entirely."
+    },
+    {
+      "id": "gargoyles",
+      "title": "Gargoyles (Slayer)",
+      "category": "COMBAT",
+      "gp_hr": 500000,
+      "reqs": {
+        "SLAYER": 75,
+        "ATTACK": 65,
+        "STRENGTH": 65
+      },
+      "req_quests": [],
+      "tip": "Gargoyles on the Slayer Tower top floor drop Rune items, Granite Maul (25K alch), and Large Boned remains. ~500K GP/hr average in raw drops. Requires a Rock Hammer or Granite Hammer to finish kills. AFK-friendly if you're on task — extend via Slayer points. The Grotesque Guardians boss (unlocked with Black Tourmaline Core from regular Gargoyles) drops even more valuable items."
+    },
+    {
+      "id": "abyssal_demons",
+      "title": "Abyssal Demons (Slayer)",
+      "category": "COMBAT",
+      "gp_hr": 600000,
+      "reqs": {
+        "SLAYER": 85,
+        "ATTACK": 70,
+        "STRENGTH": 70
+      },
+      "req_quests": [],
+      "tip": "Abyssal Demons in the Slayer Tower or Catacombs of Kourend. Drop Abyssal Whip (1/512, ~2.5M), Abyssal Dagger (1/32,000), and consistent rune drops worth ~600K GP/hr. Extend via Slayer points. In the Catacombs you can use Arclight against demonic creatures for a 70% accuracy bonus — significantly speeds up kills. Absolutely worth unlocking and extending."
+    },
+    {
+      "id": "cerberus",
+      "title": "Cerberus (Slayer Boss)",
+      "category": "COMBAT",
+      "gp_hr": 2500000,
+      "reqs": {
+        "SLAYER": 91,
+        "PRAYER": 43
+      },
+      "req_quests": [],
+      "tip": "Cerberus drops Primordial Crystal (1/512, ~20M), Pegasian Crystal (1/512, ~18M), Eternal Crystal (1/512, ~15M) and Smouldering Stone (1/512, ~3M). One of the best GP/hr bosses in the game. Requires a Hellhound or Cerberus Slayer task. Bring super restores and protection prayers — Cerberus uses a 3-prayer drain special. Use Magic attack style (Ancestral/Ahrim) for fast kills."
+    },
+    {
+      "id": "grotesque_guardians",
+      "title": "Grotesque Guardians (Slayer Boss)",
+      "category": "COMBAT",
+      "gp_hr": 1500000,
+      "reqs": {
+        "SLAYER": 75
+      },
+      "req_quests": [],
+      "tip": "Unlocked by finding the Brittle Key from regular Gargoyle tasks. Drops Black Tourmaline Core (1/500, needed for Granite Ring), Granite Gloves (1/150), Granite Hammer (1/150), and a guaranteed Granite Cannonball supply. Can only be fought on a Gargoyle Slayer task. Use ranged attack style and pray Protect from Ranged during Dawn's phase."
+    },
+    {
+      "id": "zulrah",
+      "title": "Zulrah",
+      "category": "COMBAT",
+      "gp_hr": 2000000,
+      "reqs": {
+        "MAGIC": 75,
+        "RANGED": 75,
+        "PRAYER": 43
+      },
+      "req_quests": [
+        "REGICIDE"
+      ],
+      "tip": "Zulrah drops Tanzanite Fang (Toxic Blowpipe, 1/512), Magic Fang (Toxic Staff, 1/512), Serpentine Visage (1/512) and consistent herb drops (~500K GP/run in supplies). Requires learning 4 rotation patterns. Use Void or Ancestral for Magic phase, Void Ranged or Karil's for Ranged phase. With teleport methods (Fairy Ring + Zul-Andra scroll) you can complete ~25-30 kills per hour."
+    },
+    {
+      "id": "vorkath",
+      "title": "Vorkath",
+      "category": "COMBAT",
+      "gp_hr": 3000000,
+      "reqs": {
+        "RANGED": 70,
+        "PRAYER": 43
+      },
+      "req_quests": [
+        "DRAGON_SLAYER_II"
+      ],
+      "tip": "Vorkath drops ~120K GP per kill in supplies plus unique drops (Vorkath's Head 1/50, Skeletal Visage 1/5,000, Draconic Visage 1/5,000). At 25-30 kills/hr with Ruby Dragon Bolts (e) and Armadyl Crossbow or Twisted Bow, this is one of the best sustained GP/hr bosses. Use Protect from Magic and Void/Karils. Learn the Woox Walk technique to skip safe-spotting the Zombified Spawn."
+    },
+    {
+      "id": "alching",
+      "title": "High Alch — Maple/Yew Longbows",
+      "category": "SKILLING",
+      "gp_hr": 180000,
+      "reqs": {
+        "MAGIC": 55,
+        "FLETCHING": 55
+      },
+      "req_quests": [],
+      "tip": "The Ironman's passive GP loop: Chop Maple/Yew Logs → Fletch into Unstrung Longbows → String with Bowstrings (spin Flax at Lumbridge Spinning Wheel or buy from Catherby) → High Alch. Maple Longbows alch for 576gp each, Yew Longbows (Fletching 70) for 768gp each. Each alch also gives 65 Magic XP. Do this during herb runs, banking trips, or any idle moment."
+    }
+  ],
+  "sailing_meta": [
+    {
+      "activity": "Coastal Routes (Dinghy — lvl 1+)",
+      "req_level": 1,
+      "tip": "Your starting Sailing content. Coastal Routes from level 1 produce basic fishing hauls, navigation charts and crafting rope. Assign a crew member to the Supply dock role before logging out — it generates passive resources even offline. Train here from 1 to 20."
+    },
+    {
+      "activity": "Island Exploration (Sloop — lvl 20+)",
+      "req_level": 20,
+      "tip": "Upgrade to a Sloop at 20 Sailing. Island Exploration routes unlock access to small island resource caches, unique fish and your second crew slot. Double the XP rate of Coastal Routes. Prioritise hull durability upgrades before sail upgrades for survivability."
+    },
+    {
+      "activity": "Resource Runs — Rosewood Planks (Caravel — lvl 40+)",
+      "req_level": 40,
+      "tip": "Stock 200+ Rosewood Planks for Construction training via Caravel resource runs. Planks accumulate passively — prioritise them as your main cargo on Caravel routes. Also begin collecting Sailing Halibut here (20 HP heal, replaces Sharks as primary Slayer food)."
+    },
+    {
+      "activity": "Barracuda Trials (lvl 60+)",
+      "req_level": 60,
+      "tip": "Best Sailing XP/Hour for Ironmen. A combat-agility encounter on the open sea rewarding Sailing XP plus Ironman-friendly loot (unique fish, rare ship components). Stack your crew with combat-specialist members before running these. Prioritise Barracuda Trials over resource runs until you have a Galleon at 70+ Sailing."
+    },
+    {
+      "activity": "Long Haul Routes (Galleon — lvl 70+)",
+      "req_level": 70,
+      "tip": "Galleon-class Long Haul Routes give 100K+ XP/hr and deliver Sailing Halibut in bulk, Ironwood Planks, and rare navigation charts. Combine with Barracuda Trials (60/40 split) for maximum Sailing XP efficiency. Complete all Port Supply side quests for permanent crew XP bonuses."
+    },
+    {
+      "activity": "Port Supply Management (passive — all levels)",
+      "req_level": 1,
+      "tip": "Assign at least one crew member to your port's supply dock before logging out. It generates food, rope and basic crafting materials passively between sessions. Even a single crew member produces thousands of resources over a week — never leave port without a crew assigned."
+    }
+  ]
+}
