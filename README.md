@@ -3,7 +3,7 @@
 A RuneLite plugin that delivers contextual, data-driven intelligence for solo Ironmen.
 Built around the **2026 meta** — Varlamore, Sailing, Hunter Rumours, Moonlight Moth Mixes, Scorching Bow, and more.
 
-> **Source**: [github.com/bakes982/solo-ironman-strategist](https://github.com/bakes982/solo-ironman-strategist)
+> **Source**: [github.com/Bakes982/solo-ironman-strategist](https://github.com/Bakes982/solo-ironman-strategist)
 
 ---
 
@@ -169,7 +169,7 @@ This plugin is designed around the **April 2026 OSRS meta**:
 ## Installation (Developer / Sideload)
 
 ```bash
-git clone https://github.com/bakes982/solo-ironman-strategist
+git clone https://github.com/Bakes982/solo-ironman-strategist
 cd solo-ironman-strategist
 ./gradlew build
 ```
