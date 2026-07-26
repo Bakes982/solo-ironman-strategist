@@ -82,7 +82,7 @@ public class ProgressionService
         if (all.isEmpty()) return null;
 
         Set<String> manualDone  = getManualCompleted();
-        int         sailingLevel = config != null ? config.sailingLevel() : 1;
+        int         sailingLevel = SailingLevel.of(client, config);
 
         for (MetaDataProvider.GuideMilestone m : all)
         {
