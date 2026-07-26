@@ -32,7 +32,7 @@ Built around the **2026 meta** — Varlamore, Sailing, Hunter Rumours, Moonlight
 | **LAST DEATH** | Location (X/Y coordinates) + live despawn countdown (amber → red under 10 min) |
 
 ### Progression Checklist
-- 24 milestones ordered by priority (Pandemonium → Sailing 70 → Scorching Bow)
+- 24 milestones ordered by priority (Pandemonium → Sailing 50 → Scorching Bow)
 - **Auto-completion**: quest state, item in bank/equipped, or skill level reached
 - Manual checkbox override for edge cases
 - "+N more" overflow cap keeps the list focused at 5 visible items
@@ -95,12 +95,18 @@ Scans 31 tracked items (rune/dragon weapons, crafted bows) and highlights any wh
 **HA value > GE price**, sorted by profit per item descending.
 
 ### Shipyard
-Ship hull/sail materials for Sailing upgrade readiness:
-- **Sloop** (50 planks + 100 steel nails + 2 cloth)
-- **Caravel** (100 oak + 200 steel nails + 5 cloth)
-- **Galleon** (200 teak + 500 mithril nails + 10 cloth)
+Hull upgrade readiness from banked shipbuilding materials. Every hull costs planks
+of its wood, nails of its metal, 25 swamp tar, and 5 lead bars from teak up —
+counts are for a **sloop** hull (16 large parts = 400 planks; a skiff hull takes 50):
+- **Wooden** (1 Sailing / 1 Con) — planks + bronze nails
+- **Oak** (20 / 8) — oak planks + iron nails
+- **Teak** (31 / 23) — teak planks + steel nails
+- **Mahogany** (48 / 41) — mahogany planks + mithril nails
+- **Camphor** (67 / 59) — camphor planks + adamantite nails
 
-Cards are green when all materials are ready, amber when short (shows exact shortfall).
+Shows the lowest tier you have not fully stocked plus the next one up. Cards are
+green when all materials are ready, amber when short (shows exact shortfall).
+Keel and mast/sail materials are not tracked.
 
 ---
 
@@ -118,7 +124,7 @@ Dropdown covering 23 skills + Sailing.  Each skill shows:
 
 ### Meta Efficiency Tips
 24 tips gated by skill level — only shows tips relevant to your current progression.
-Covers: Sailing routes, Hunter Rumours, Moonlight Moth Mixes, Farming, Agility, Thieving, Slayer, and more.
+Covers: Sailing activities, Hunter Rumours, Moonlight Moth Mixes, Farming, Agility, Thieving, Slayer, and more.
 
 ### Money Making Methods
 15 methods (H.A.M. Storeroom → Vorkath) showing GP/hr estimates, filtered live by:
@@ -147,9 +153,9 @@ Sorted by GP/hr descending.  Each card shows a requirements line:
 | Active Grinds | **Low Supply Alert (Hours)** | 1.0 | Supply overlay turns red below this many hours of prayer potions |
 | Shop Overlay | **Broad Arrowheads** | 5000 | Highlight in shop if bank < this; red if < 20% of threshold |
 | Shop Overlay | **Nature Runes** | 1000 | Highlight in shop if bank < this; red if < 20% of threshold |
-| Shop Overlay | **Rosewood Planks** | 200 | Highlight in shop if Sailing ≥ 40 and bank < this |
+| Shop Overlay | **Rosewood Planks** | 200 | Highlight in shop if Sailing ≥ 79 and bank < this |
 | Bank Warnings | **Herblore Secondary Warning** | On | Warn when you have herbs but are missing matching secondaries |
-| Sailing | **Sailing Level** | 1 | Manual level input (Sailing not yet a native RuneLite tracked skill) |
+| Sailing | **Sailing Level (fallback)** | 1 | Only used when the client cannot report your Sailing level (logged out, or an older RuneLite) |
 
 ---
 
@@ -157,8 +163,8 @@ Sorted by GP/hr descending.  Each card shows a requirements line:
 
 This plugin is designed around the **April 2026 OSRS meta**:
 
-- **Sailing** skill (1–99 via manual level config), all three ship tiers tracked
-- **Pandemonium** quest → Starter Sloop (priority 0 milestone, day-1 meta)
+- **Sailing** skill (1–99, read live from the client), hull upgrade tiers tracked
+- **Pandemonium** quest → free raft, spyglass and sawmill coupons (priority 0 milestone, day-1 meta)
 - **Varlamore** content: Hunter Guild Rumours, Moonlight Moths (prayer solution), Sunlight Crossbow (Fletching 74), Colossal Wyrm Agility course
 - **Scorching Bow** — Araxxor (Slayer 92), Synapse + Magic Shortbow, Fletching 85
 - **Zombie Axe** — Defender of Varrock quest, BIS bridge melee weapon

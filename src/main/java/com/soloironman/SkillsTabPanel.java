@@ -217,7 +217,7 @@ public class SkillsTabPanel extends JPanel
         if (selected == null) return;
 
         // Determine real level from the game-thread snapshot (cachedLevels).
-        // Sailing is not a native RuneLite skill — use the manually configured value.
+        // Sailing comes in via SailingLevel (live client level, config fallback).
         int playerLevel = 1;
         if ("SAILING".equalsIgnoreCase(selected))
         {

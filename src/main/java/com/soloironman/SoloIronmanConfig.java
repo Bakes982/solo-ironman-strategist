@@ -101,7 +101,7 @@ public interface SoloIronmanConfig extends Config
     @ConfigItem(
         keyName     = "rosewoodPlankThreshold",
         name        = "Rosewood Planks (Sailing)",
-        description = "Highlight in shop if Sailing >= 40 and bank < this.",
+        description = "Highlight in shop if Sailing >= 79 and bank < this.",
         section     = shopSection,
         position    = 3
     )
@@ -135,15 +135,15 @@ public interface SoloIronmanConfig extends Config
 
     @ConfigSection(
         name        = "Sailing",
-        description = "Manual Sailing level until RuneLite tracks the skill natively",
+        description = "Fallback Sailing level — only used when the live level cannot be read from the client",
         position    = 3
     )
     String sailingSection = "sailing";
 
     @ConfigItem(
         keyName     = "sailingLevel",
-        name        = "Sailing Level",
-        description = "Your current Sailing level (used for Rosewood Plank threshold and Barracuda Trials tip)",
+        name        = "Sailing Level (fallback)",
+        description = "Only used when the client cannot report your Sailing level (e.g. logged out, or an older RuneLite)",
         section     = sailingSection,
         position    = 0
     )

@@ -8,7 +8,7 @@
       "trigger_quest": "PANDEMONIUM",
       "trigger_skill": "SAILING",
       "trigger_level": 5,
-      "tip": "Complete 'Pandemonium' (no skill requirements) to receive your free Starter Sloop from the Port Sarim Shipwright. Immediately assign a crew member to the Supply dock role before logging out for passive resource collection. Run Courier Voyages until Sailing 20 to unlock the Dinghy upgrade path — Courier tasks give the best early XP/hr and produce crafting rope, navigation charts and cooking fish passively. Essential 2026 meta unlock."
+      "tip": "Complete 'Pandemonium' (no requirements — talk to Will and Anne on the Port Sarim docks) to unlock Sailing. It pays 400 Sailing XP and hands you a free raft, 25 sawmill coupons, 2 repair kits and a spyglass. From there alternate courier deliveries (coins, and a second concurrent task at level 7) with spyglass sea charting tasks (region completion bonuses). Musa Point opens as a courier destination at 10."
     },
     {
       "id": "waterfall_quest",
@@ -179,13 +179,13 @@
       "tip": "Visit the Hunter Guild in Varlamore the moment you have Hunter 9. Speak to any Guild NPC to receive a Rumour task — Hunter assignments that scale to your current level and award loot bags on completion. These bags contain seeds, gems and Varlamore-specific materials on top of base Hunter XP. Always have an active Rumour when training Hunter. The plugin HUD overlay tracks your current Rumour target in real time."
     },
     {
-      "id": "sailing_caravel",
+      "id": "sailing_trials",
       "category": "SKILLS",
       "priority": 19,
-      "title": "Sailing 40 — Caravel Tier Unlocked",
+      "title": "Sailing 30 — Barracuda Trials + Bounty Tasks",
       "trigger_skill": "SAILING",
-      "trigger_level": 40,
-      "tip": "Sailing 40 unlocks Caravel-class ships — a major upgrade over the starting Dinghy. Upgrade hull and sails with Port Sarim Shipwright materials. Caravel routes unlock Rosewood Planks (stack 200+ for Construction training), Sailing Halibut (20 HP heal — replaces Sharks as your primary Slayer food), and mid-tier crew members. Focus Barracuda Trials from 60 Sailing for the best combined XP and resource return per hour."
+      "trigger_level": 30,
+      "tip": "Sailing 30 opens The Tempor Tantrum, the first Barracuda Trial, and Barracuda Trials are the fastest Sailing XP from here to 99 (19K-24K XP/hr at this tier, rising with each trial). Bounty tasks also unlock at 30: seafaring monster assignments structured like Hunters' Rumours, dropping bounty parts alongside normal monster loot — the best Sailing source of Ironman-usable drops. By now you should own a skiff (15 Sailing, 15,000 coins from a shipwright) and be running shipwreck salvaging when you want something low-intensity."
     },
     {
       "id": "colosseum_prep",
@@ -197,13 +197,13 @@
       "tip": "The Colosseum of Fortune in Varlamore rewards Dizana's Quiver — best-in-slot ranged ammo holder. Requires: 90+ Ranged, 80+ Prayer, high-quality armour (Masori or equivalent), and memorised mechanics for all 12 invocations. Use the Sunlight Crossbow + Zaryte Vambraces while building toward this. Study each Sol Heredit phase before your first attempt — this is Inferno-tier content."
     },
     {
-      "id": "sailing_galleon",
+      "id": "sailing_sloop",
       "category": "SKILLS",
       "priority": 21,
-      "title": "Sailing 70 — Galleon + Long Haul Routes",
+      "title": "Sailing 50 — Buy a Sloop",
       "trigger_skill": "SAILING",
-      "trigger_level": 70,
-      "tip": "Sailing 70 unlocks Galleon-class ships — the endgame vessel. Long Haul Routes to distant island chains give 100K+ XP/hr and deliver Sailing Halibut in bulk, Ironwood Planks, and rare ship components. At this tier your crew efficiency is high enough to sustain automated supply collection between logins. Combine 60% Long Haul Routes with 40% Barracuda Trials for maximum XP efficiency. Complete all Port Supply quests for permanent crew XP bonuses."
+      "trigger_level": 50,
+      "tip": "Sailing 50 unlocks the sloop — 200,000 coins from a shipwright, and the largest ship in the game (3x10, 5 crew slots, 11 facility hotspots). This is the hull you keep to 99, so put upgrade materials into it rather than the skiff. Nearby: deep sea trawling at 56 (Sailing XP plus Fishing XP, food and herblore secondaries), The Jubbly Jive trial at 55 for 65K-89K XP/hr, and The Gwenith Glide at 72 for up to 198K XP/hr."
     },
     {
       "id": "zombie_axe",
@@ -230,17 +230,17 @@
     {
       "trigger_skill": "SAILING",
       "trigger_level": 1,
-      "tip": "Collect your free Dinghy from the Port Sarim Shipwright immediately — no cost required. Prioritise the starter coastal voyage to unlock your first crew member. Even early Coastal Routes produce useful Ironman resources: fish for cooking XP, navigation charts and basic crafting rope. Assign a crew member to the Supply dock role before logging out for passive income."
+      "tip": "Pandemonium hands you a free raft, so there is nothing to buy to start Sailing. Run courier tasks for coins and sea charting tasks for region-completion XP. Two cheap quests pay for themselves in charting rates: Prying Times at 12 Sailing (crowbar, unlocks crate tasks) and Current Affairs at 22 (current duck tasks). Save toward the 15,000 coin skiff at 15."
     },
     {
       "trigger_skill": "SAILING",
-      "trigger_level": 40,
-      "tip": "Caravel upgrade: invest Sailing resources in hull reinforcement and larger sails first — they improve trip duration and cargo capacity. At 40 Sailing switch from Coastal to Island Exploration routes for double the XP rate. Begin stockpiling Rosewood Planks (Construction training) and Sailing Halibut (Slayer food) now — your bank will thank you."
+      "trigger_level": 30,
+      "tip": "Switch your main Sailing activity to Barracuda Trials at 30 — they beat everything else on XP/hr for the rest of the skill. Pick the highest rank you can reliably finish (Swordfish, then Shark, then Marlin) rather than the hardest one available. Keep bounty tasks running alongside for drops, and use shipwreck salvaging when you want low-attention XP; salvaging jumps sharply at 42 once you have the salvaging station schematic."
     },
     {
       "trigger_skill": "SAILING",
-      "trigger_level": 60,
-      "tip": "Prioritise Barracuda Trials for the best Sailing XP/Hour for Ironmen — grants Ironman-friendly combat resources alongside XP. Don't bother with standard resource runs as your primary Sailing activity until 70+ Sailing, when Galleon-class Long Haul Routes overtake them in efficiency."
+      "trigger_level": 56,
+      "tip": "Deep sea trawling is the Sailing activity that actually stocks your bank: Fishing XP and Sailing XP at once, plus raw fish for food and herblore secondaries (haddock eyes, marlin scales). Net tiers gate the catch size — rope 56, linen 65, hemp 76, cotton 84 — and shoals gate on Fishing: krill 69, haddock 73, yellowfin 79, halibut 83, bluefin 87, marlin 91. Bait shoals with fish offcuts (fine offcuts for yellowfin and above) for roughly 20% more fish per catch."
     },
     {
       "trigger_skill": "HERBLORE",
@@ -392,15 +392,15 @@
       "efficiency": "Standard combo-eat food. Use with a Fish Barrel for 2x trip length on Slayer tasks. The shop restocks over time — buy the full stock on every visit."
     },
     {
-      "level_range": "40-99",
-      "item": "Sailing Halibut",
-      "location": "Sailing resource routes — Caravel tier (Sailing 40+)",
-      "efficiency": "20 HP heal per fish — replaces Sharks as the primary Ironman Slayer food at 40 Sailing. Collected passively from Caravel and Galleon resource runs. Stack in bank and use as your main food supply from mid-game onward."
+      "level_range": "83-99",
+      "item": "Raw halibut (deep sea trawling)",
+      "location": "Halibut shoals — 83 Fishing, 56+ Sailing for a trawling net",
+      "efficiency": "Heals 20 and eats fast like a karambwan, so it combos with another food in the same tick. Trawled in bulk with fine fish offcuts as bait and stored 10 to a fish crate — the best self-sufficient combo food an Ironman can farm, and it pays Fishing and Sailing XP while you stock it."
     },
     {
       "level_range": "90-99",
-      "item": "Moonlight Antelope / High-heal Sailing fish",
-      "location": "Varlamore hunting grounds / Galleon Long Haul Routes",
+      "item": "Moonlight Antelope / trawled bluefin",
+      "location": "Varlamore hunting grounds / bluefin shoals (87 Fishing)",
       "efficiency": "End-game food tier. Moonlight Antelope from Varlamore hunting gives high heals. Combine with Saradomin Brews for max-efficiency bossing setups."
     }
   ],
@@ -632,34 +632,34 @@
   ],
   "sailing_meta": [
     {
-      "activity": "Coastal Routes (Dinghy — lvl 1+)",
+      "activity": "Courier tasks (lvl 1+)",
       "req_level": 1,
-      "tip": "Your starting Sailing content. Coastal Routes from level 1 produce basic fishing hauls, navigation charts and crafting rope. Assign a crew member to the Supply dock role before logging out — it generates passive resources even offline. Train here from 1 to 20."
+      "tip": "Cargo deliveries between ports — your bread-and-butter alongside charting in the early levels, and a genuine XP method again later on. Port Sarim and The Pandemonium to start, Musa Point at 10, two tasks at once from 7. Rates climb with the port: Summer Shore 30K XP/hr in the 46-55 range, Rellekka 55K-70K (90K with Etceteria), Prifddinas 65K-70K (needs Song of the Elves), Lunar Isle 120K-145K from 76."
     },
     {
-      "activity": "Island Exploration (Sloop — lvl 20+)",
-      "req_level": 20,
-      "tip": "Upgrade to a Sloop at 20 Sailing. Island Exploration routes unlock access to small island resource caches, unique fish and your second crew slot. Double the XP rate of Coastal Routes. Prioritise hull durability upgrades before sail upgrades for survivability."
+      "activity": "Sea charting (lvl 4+)",
+      "req_level": 4,
+      "tip": "Spyglass survey tasks that fill in map regions for bonus XP — around 10K XP/hr by level 22. Task types unlock as you go: generic and spyglass at 4, crowbar crates at 12 (Prying Times), current ducks at 22 (Current Affairs). Worth finishing: full charting completion at 78 grants horizon's lure, a permanent 2.5% Sailing XP boost."
     },
     {
-      "activity": "Resource Runs — Rosewood Planks (Caravel — lvl 40+)",
-      "req_level": 40,
-      "tip": "Stock 200+ Rosewood Planks for Construction training via Caravel resource runs. Planks accumulate passively — prioritise them as your main cargo on Caravel routes. Also begin collecting Sailing Halibut here (20 HP heal, replaces Sharks as primary Slayer food)."
+      "activity": "Shipwreck salvaging (lvl 15+)",
+      "req_level": 15,
+      "tip": "The low-intensity option, and the one that feeds your own ship upgrades — salvage comes in bronze through dragon tiers and goes into repairs and equipment. Wreck tiers gate on level: small at 15 (2K-3.2K XP/hr), barracuda at 35 (12.5K-18K), pirate at 64 (44K-47K), merchant at 87 (80K-95K). Get the salvaging station schematic at 42 — rates roughly triple with it."
     },
     {
-      "activity": "Barracuda Trials (lvl 60+)",
-      "req_level": 60,
-      "tip": "Best Sailing XP/Hour for Ironmen. A combat-agility encounter on the open sea rewarding Sailing XP plus Ironman-friendly loot (unique fish, rare ship components). Stack your crew with combat-specialist members before running these. Prioritise Barracuda Trials over resource runs until you have a Galleon at 70+ Sailing."
+      "activity": "Bounty tasks (lvl 30+)",
+      "req_level": 30,
+      "tip": "Seafaring monster assignments that work like Hunters' Rumours: you are sent after a specific sea creature and each kill drops a bounty part. Mid-tier XP — between salvaging and trials — but the best Sailing source of Ironman-usable drops, so keep one running while you do something else."
     },
     {
-      "activity": "Long Haul Routes (Galleon — lvl 70+)",
-      "req_level": 70,
-      "tip": "Galleon-class Long Haul Routes give 100K+ XP/hr and deliver Sailing Halibut in bulk, Ironwood Planks, and rare navigation charts. Combine with Barracuda Trials (60/40 split) for maximum Sailing XP efficiency. Complete all Port Supply side quests for permanent crew XP bonuses."
+      "activity": "Barracuda Trials (lvl 30+)",
+      "req_level": 30,
+      "tip": "The fastest Sailing XP from 30 to 99. A timed collection race with three ranks per trial (Swordfish, Shark, Marlin — higher ranks allow more time but demand more). Three trials: The Tempor Tantrum at 30 (19K-24K XP/hr), The Jubbly Jive at 55 (65K-89K), The Gwenith Glide at 72 (114K-198K, the top end with a crystal extractor). Run the highest rank you can finish consistently, not the highest you can enter."
     },
     {
-      "activity": "Port Supply Management (passive — all levels)",
-      "req_level": 1,
-      "tip": "Assign at least one crew member to your port's supply dock before logging out. It generates food, rope and basic crafting materials passively between sessions. Even a single crew member produces thousands of resources over a week — never leave port without a crew assigned."
+      "activity": "Deep sea trawling (lvl 56+)",
+      "req_level": 56,
+      "tip": "A Fishing/Sailing hybrid — slower Sailing XP than trials but it fills your bank while you train. Net tiers: rope 56, linen 65, hemp 76, cotton 84 (bigger catches, not better catch rates). Shoals gate on Fishing: giant krill 69, haddock 73, yellowfin 79, halibut 83, bluefin 87, marlin 91. Halibut heals 20 and eats fast like a karambwan; haddock eyes and marlin scales are herblore secondaries. Bait with fish offcuts (fine offcuts from yellowfin up) for ~20% more fish per catch."
     }
   ]
 }

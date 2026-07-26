@@ -235,7 +235,7 @@ public class SoloIronmanPlugin extends Plugin
         {
             lastKnownLevels[ordinal] = newLevel;
             log.debug("Level-up detected: {} → {}", skill.getName(), newLevel);
-            panel.refresh(client, config.sailingLevel());
+            panel.refresh(client, SailingLevel.of(client, config));
         }
     }
 
@@ -276,7 +276,7 @@ public class SoloIronmanPlugin extends Plugin
         if (!"soloironman".equals(event.getGroup())) return;
         if (client.getGameState() == GameState.LOGGED_IN)
         {
-            panel.refresh(client, config.sailingLevel());
+            panel.refresh(client, SailingLevel.of(client, config));
         }
     }
 
@@ -335,7 +335,7 @@ public class SoloIronmanPlugin extends Plugin
             initialRefreshCountdown--;
             if (initialRefreshCountdown == 0)
             {
-                panel.refresh(client, config.sailingLevel());
+                panel.refresh(client, SailingLevel.of(client, config));
 
                 // Seed lastMilestoneTitle so the change-detection below doesn't
                 // immediately fire a second refresh on the very same tick.
@@ -385,7 +385,7 @@ public class SoloIronmanPlugin extends Plugin
             skillLevels[s.ordinal()] = client.getRealSkillLevel(s);
             skillXp[s.ordinal()]     = client.getSkillExperience(s);
         }
-        panel.updateSkillLevels(client, skillLevels, config.sailingLevel());
+        panel.updateSkillLevels(client, skillLevels, SailingLevel.of(client, config));
         panel.updateSkillXp(skillXp);
 
         // ── Slayer task snapshot ───────────────────────────────────────────────
@@ -434,7 +434,7 @@ public class SoloIronmanPlugin extends Plugin
         {
             lastMilestoneTitle = milestone;
             log.debug("Milestone changed → '{}'; triggering checklist rebuild", milestone);
-            panel.refresh(client, config.sailingLevel());
+            panel.refresh(client, SailingLevel.of(client, config));
         }
 
         final RumourService.RumourInfo rumourInfoFinal = rumourInfo; // effectively final for lambda

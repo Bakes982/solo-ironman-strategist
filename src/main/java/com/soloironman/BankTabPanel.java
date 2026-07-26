@@ -820,87 +820,98 @@ public class BankTabPanel extends JPanel
     }
 
     /**
-     * SHIPYARD — shows Sloop / Caravel / Galleon upgrade readiness based on
-     * banked planks, nails and bolt of cloth.
+     * SHIPYARD — hull upgrade readiness from banked planks, nails, swamp tar
+     * and lead bars.
      *
      * <p>Each tier renders a {@link StrategistCard}:
      * <ul>
-     *   <li><b>Green (SKILLING)</b>  — all materials stockpiled, ready to upgrade</li>
+     *   <li><b>Green (SKILLING)</b>  — all materials stockpiled, ready to build</li>
      *   <li><b>Amber (FOUNDATION)</b> — partially stocked, shows what is missing</li>
      * </ul>
      *
-     * <p>Section is always shown so it acts as a reminder even when the player
-     * has nothing banked yet.  Upgrade costs are beta-era estimates — the footer
-     * note tells the player to verify with the Shipwright NPC.
+     * <p>To keep the section short, only the lowest tier the player has not fully
+     * stocked and the one above it are shown, plus any tier already stocked.
+     * Section is always shown so it acts as a reminder even with an empty bank.
      */
     private void buildSailingSection()
     {
         BankScanner.ShipyardSummary s = bankScanner.getShipyardSummary();
 
-        // Materials summary line
-        String materialLine = "  Cloth: " + s.boltOfCloth
-                + "  ·  Steel nails: " + s.steelNails
-                + "  ·  Mithril nails: " + s.mithrilNails;
-        sailingContentPanel.add(dimLabel(materialLine));
+        sailingContentPanel.add(dimLabel("  Swamp tar: " + s.swampTar
+                + "  ·  Lead bars: " + s.leadBars));
         sailingContentPanel.add(vgap(3));
 
-        addShipTierCard("Sloop Upgrade",
-            "Planks",      s.regularPlanks, BankScanner.SLOOP_PLANKS_NEED,
-            "Steel nails", s.steelNails,    BankScanner.SLOOP_NAILS_NEED,
-            "Cloth",       s.boltOfCloth,   BankScanner.SLOOP_CLOTH_NEED);
+        int focus = s.hullTiers.size() - 1;
+        for (int i = 0; i < s.hullTiers.size(); i++)
+        {
+            if (!s.hullTiers.get(i).ready)
+            {
+                focus = i;
+                break;
+            }
+        }
 
-        addShipTierCard("Caravel Upgrade",
-            "Oak planks",  s.oakPlanks,     BankScanner.CARAVEL_PLANKS_NEED,
-            "Steel nails", s.steelNails,    BankScanner.CARAVEL_NAILS_NEED,
-            "Cloth",       s.boltOfCloth,   BankScanner.CARAVEL_CLOTH_NEED);
+        for (int i = 0; i < s.hullTiers.size(); i++)
+        {
+            BankScanner.HullTier tier = s.hullTiers.get(i);
+            if (tier.ready || i <= focus + 1)
+            {
+                addHullTierCard(tier);
+            }
+        }
 
-        addShipTierCard("Galleon Upgrade",
-            "Teak planks", s.teakPlanks,    BankScanner.GALLEON_PLANKS_NEED,
-            "Mith nails",  s.mithrilNails,  BankScanner.GALLEON_NAILS_NEED,
-            "Cloth",       s.boltOfCloth,   BankScanner.GALLEON_CLOTH_NEED);
-
-        sailingContentPanel.add(dimLabel("  * Costs are estimates — confirm with Shipwright NPC"));
+        sailingContentPanel.add(dimLabel("  * Sloop hull costs — a skiff hull takes 50 planks, not 400"));
+        sailingContentPanel.add(dimLabel("  * Keel and mast materials are not tracked"));
     }
 
     /**
-     * Builds a single ship-tier upgrade card.
-     *
-     * @param title       Card header (e.g. "Caravel Upgrade")
-     * @param pName       Plank type label (e.g. "Oak planks")
-     * @param pHave       How many planks the player has banked
-     * @param pNeed       How many planks the upgrade costs
-     * @param nName       Nail type label
-     * @param nHave       Nails banked
-     * @param nNeed       Nails needed
-     * @param cHave       Cloth banked
-     * @param cNeed       Cloth needed
+     * Builds a single hull-tier card: have/need for each of the tier's materials,
+     * with the shortfall summarised on the collapsed value line.
      */
-    private void addShipTierCard(String title,
-                                  String pName, int pHave, int pNeed,
-                                  String nName, int nHave, int nNeed,
-                                  String cName, int cHave, int cNeed)
+    private void addHullTierCard(BankScanner.HullTier tier)
     {
-        boolean ready = pHave >= pNeed && nHave >= nNeed && cHave >= cNeed;
-
-        // Build "need X more Y" shortfall list for the value line
         List<String> missing = new ArrayList<>();
-        if (pHave < pNeed) missing.add("need " + (pNeed - pHave) + " " + pName);
-        if (nHave < nNeed) missing.add("need " + (nNeed - nHave) + " " + nName);
-        if (cHave < cNeed) missing.add("need " + (cNeed - cHave) + " " + cName);
+        if (tier.planks < BankScanner.HULL_PLANKS_NEED)
+        {
+            missing.add("need " + (BankScanner.HULL_PLANKS_NEED - tier.planks) + " " + tier.plankName);
+        }
+        if (tier.nails < BankScanner.HULL_NAILS_NEED)
+        {
+            missing.add("need " + (BankScanner.HULL_NAILS_NEED - tier.nails) + " " + tier.nailName);
+        }
+        if (tier.swampTar < BankScanner.HULL_SWAMP_TAR_NEED)
+        {
+            missing.add("need " + (BankScanner.HULL_SWAMP_TAR_NEED - tier.swampTar) + " swamp tar");
+        }
+        if (tier.needsLeadBars && tier.leadBars < BankScanner.HULL_LEAD_BAR_NEED)
+        {
+            missing.add("need " + (BankScanner.HULL_LEAD_BAR_NEED - tier.leadBars) + " lead bars");
+        }
 
-        String valueLine = ready ? "READY  ✓" : String.join("  ·  ", missing);
+        String valueLine = tier.ready ? "READY  ✓" : String.join("  ·  ", missing);
 
-        String expand = pName + ": " + pHave + " / " + pNeed
-                      + "\n" + nName + ": " + nHave + " / " + nNeed
-                      + "\n" + cName + ": " + cHave + " / " + cNeed;
+        StringBuilder expand = new StringBuilder()
+            .append("Requires ").append(tier.sailingLevel).append(" Sailing, ")
+            .append(tier.constructionLevel).append(" Construction\n")
+            .append(tier.plankName).append(": ").append(tier.planks)
+            .append(" / ").append(BankScanner.HULL_PLANKS_NEED).append("\n")
+            .append(tier.nailName).append(": ").append(tier.nails)
+            .append(" / ").append(BankScanner.HULL_NAILS_NEED).append("\n")
+            .append("Swamp tar: ").append(tier.swampTar)
+            .append(" / ").append(BankScanner.HULL_SWAMP_TAR_NEED);
+        if (tier.needsLeadBars)
+        {
+            expand.append("\nLead bars: ").append(tier.leadBars)
+                  .append(" / ").append(BankScanner.HULL_LEAD_BAR_NEED);
+        }
 
-        StrategistCard.Category cat = ready
+        StrategistCard.Category cat = tier.ready
                 ? StrategistCard.Category.SKILLING
                 : StrategistCard.Category.FOUNDATION;
 
-        StrategistCard card = new StrategistCard(title, valueLine, expand, cat);
+        StrategistCard card = new StrategistCard(tier.name + " Hull", valueLine, expand.toString(), cat);
         card.updateValue(valueLine,
-                ready ? new Color(74, 222, 128) : C_AMBER);  // green = ready, amber = stocking
+                tier.ready ? new Color(74, 222, 128) : C_AMBER);  // green = ready, amber = stocking
 
         sailingContentPanel.add(card);
         sailingContentPanel.add(vgap(3));

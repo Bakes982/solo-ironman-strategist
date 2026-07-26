@@ -2,7 +2,6 @@ package com.soloironman;
 
 import net.runelite.api.Client;
 import net.runelite.api.ItemID;
-import net.runelite.api.Skill;
 import net.runelite.api.widgets.ComponentID;
 import net.runelite.api.widgets.WidgetItem;
 import net.runelite.client.ui.overlay.WidgetItemOverlay;
@@ -131,11 +130,14 @@ public class ShopOverlay extends WidgetItemOverlay
             }
         }
 
-        // ── Rosewood Planks (Sailing meta, level 40+ gate) ────────────────────
+        // ── Rosewood Planks (rosewood hull — 93 Sailing, 84 Construction) ─────
+        // Rosewood logs come from Drumstick Isle (92 Woodcutting, 79 Sailing to
+        // dock) and are sawmilled into planks, so this only fires in the unlikely
+        // event a shop stocks them.
         if (itemId == ITEM_ROSEWOOD_PLANK)
         {
             int sailingLevel = getSailingLevel();
-            if (sailingLevel >= 40)
+            if (sailingLevel >= 79)
             {
                 int inBank = bankScanner.getCount(ITEM_ROSEWOOD_PLANK);
                 if (inBank < config.rosewoodPlankThreshold())
@@ -170,21 +172,10 @@ public class ShopOverlay extends WidgetItemOverlay
     }
 
     /**
-     * Returns the player's Sailing level.
-     * Until Sailing is a tracked RuneLite {@link Skill}, falls back to the
-     * manually configured value in {@link SoloIronmanConfig#sailingLevel()}.
+     * Returns the player's Sailing level — see {@link SailingLevel}.
      */
     private int getSailingLevel()
     {
-        try
-        {
-            Skill sailing = Skill.valueOf("SAILING");
-            return client.getRealSkillLevel(sailing);
-        }
-        catch (IllegalArgumentException e)
-        {
-            // Skill.SAILING not yet in this RuneLite version — use manual config
-            return config.sailingLevel();
-        }
+        return SailingLevel.of(client, config);
     }
 }

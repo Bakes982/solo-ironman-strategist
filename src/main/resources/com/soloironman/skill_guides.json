@@ -178,7 +178,7 @@
           "name": "Mahogany Homes — Expert",
           "xp_per_hour": 230000,
           "location": "Ardougne / Falador / Varrock / Hosidius",
-          "tip": "Expert contracts give 185K-280K XP/hr with mahogany planks. With full Builder's Outfit and the 2.5% bonus this reaches 290K+/hr. The best GP-per-XP Construction method for ironmen by a wide margin. Supplement mahogany plank supply with Rosewood Planks from Sailing resource runs."
+          "tip": "Expert contracts give 185K-280K XP/hr with mahogany planks. With full Builder's Outfit and the 2.5% bonus this reaches 290K+/hr. The best GP-per-XP Construction method for ironmen by a wide margin."
         }
       ]
     },
@@ -216,7 +216,7 @@
           "name": "Shark / Anglerfish / 1-tick Karambwan",
           "xp_per_hour": 300000,
           "location": "Hosidius Range / Karamja",
-          "tip": "Shark (210 XP) and Anglerfish (230 XP) are ironman food staples. For maximum speed: 1-tick Karambwan at Karamja gives 464K-950K XP/hr with the Tai Bwo Wannai Trio quest completed. Also cook all Sailing Halibut from your Sailing runs — high XP and excellent food."
+          "tip": "Shark (210 XP) and Anglerfish (230 XP) are ironman food staples. For maximum speed: 1-tick Karambwan at Karamja gives 464K-950K XP/hr with the Tai Bwo Wannai Trio quest completed. Raw halibut from deep sea trawling (83 Fishing) cooks into a 20 HP fast food — karambwan-style, so it stacks with another food in one tick."
         }
       ]
     },
@@ -368,7 +368,7 @@
           "name": "Barbarian Fishing (Otto's Grotto)",
           "xp_per_hour": 65000,
           "location": "Barbarian Outpost — Otto's Grotto",
-          "tip": "Best overall Fishing XP at 50K-80K/hr. Also passively gives Strength and Agility XP. Requires Barbarian Training miniquest (Tai Bwo Wannai Trio + fishing completion). 3-tick fishing is recommended — less intense than 2-tick but still great. Sailing Halibut from your Sailing routes supplements your food supply alongside this."
+          "tip": "Best overall Fishing XP at 50K-80K/hr. Also passively gives Strength and Agility XP. Requires Barbarian Training miniquest (Tai Bwo Wannai Trio + fishing completion). 3-tick fishing is recommended — less intense than 2-tick but still great. Deep sea trawling (56 Sailing, 69+ Fishing) supplements your food supply alongside this, and pays Sailing XP at the same time."
         }
       ]
     },
@@ -720,43 +720,43 @@
       "methods": [
         {
           "min_level": 1,
-          "max_level": 20,
-          "name": "Dinghy — Coastal Routes",
+          "max_level": 15,
+          "name": "Courier Tasks + Sea Charting",
+          "xp_per_hour": 8000,
+          "location": "Port Sarim and The Pandemonium docks",
+          "tip": "Complete Pandemonium (no requirements, Will and Anne at Port Sarim docks) for the skill, a free raft, 25 sawmill coupons, 2 repair kits and a spyglass. Alternate courier deliveries with spyglass charting tasks — charting completes map regions for bonus XP, couriers pay coins. You can hold two courier tasks at once from level 7, and Musa Point opens at 10."
+        },
+        {
+          "min_level": 15,
+          "max_level": 30,
+          "name": "Sea Charting + Shipwreck Salvaging",
           "xp_per_hour": 10000,
-          "location": "Port Sarim, Ardougne, Catherby docks",
-          "tip": "Collect your free Dinghy from the Port Sarim Shipwright — no cost required. Coastal Routes from level 1 produce fishing hauls, navigation charts and crafting rope. Assign your starter crew member to the Supply dock role before logging out for passive resource income. These levels pass in a couple of hours of casual sailing."
+          "location": "Charted regions; wreck pools near your home port",
+          "tip": "Buy a skiff at 15 Sailing (15,000 coins from a shipwright) — 2 crew slots and 7 facility hotspots. Shipwreck salvaging also opens at 15: low-intensity, AFK-friendly, and the salvage feeds ship repairs and upgrades. Do Prying Times at 12 for the crowbar (crate charting tasks) and Current Affairs at 22 for current duck tasks — both raise charting rates."
         },
         {
-          "min_level": 20,
-          "max_level": 40,
-          "name": "Sloop — Island Exploration Routes",
-          "xp_per_hour": 25000,
-          "location": "Port Sarim / Piscatoris harbour",
-          "tip": "Upgrade to a Sloop at 20 Sailing — buy the hull upgrade from the Port Sarim Shipwright with accumulated Sailing resources. Island Exploration routes double your XP rate and unlock small island resource caches. Prioritise hull durability upgrades before sails — a sturdier hull survives more encounters per trip."
+          "min_level": 30,
+          "max_level": 55,
+          "name": "Barracuda Trials — The Tempor Tantrum",
+          "xp_per_hour": 22000,
+          "location": "Barracuda Trials course",
+          "tip": "Trials become the fastest training method for the rest of the skill. Tempor Tantrum runs 19K-24K XP/hr depending on rank (Swordfish, Shark, Marlin — harder ranks give more time and higher requirements). Bounty tasks also open at 30: seafaring monster assignments that work like Hunters' Rumours and drop bounty parts, worth mixing in for the loot."
         },
         {
-          "min_level": 40,
-          "max_level": 60,
-          "name": "Caravel — Resource Runs",
-          "xp_per_hour": 45000,
-          "location": "Open sea from Port Sarim / Ardougne docks",
-          "tip": "Caravel tier (40 Sailing) dramatically improves cargo capacity and trip duration. Access Rosewood Plank resource nodes (200+ planks per trip — essential Construction supply) and Sailing Halibut fishing zones (20 HP heal, replaces Sharks as your primary Slayer food). Run Encounter events for bonus XP whenever they appear on your route."
+          "min_level": 55,
+          "max_level": 72,
+          "name": "Barracuda Trials — The Jubbly Jive",
+          "xp_per_hour": 80000,
+          "location": "Barracuda Trials course",
+          "tip": "Jubbly Jive gives 65K-89K XP/hr at Marlin rank. Buy a sloop at 50 Sailing (200,000 coins) — 5 crew slots, 11 facility hotspots, and the ship you will keep to 99. Deep sea trawling opens at 56 with a rope net: it is slower Sailing XP but doubles as Fishing XP and stocks your bank with food and herblore secondaries."
         },
         {
-          "min_level": 60,
-          "max_level": 80,
-          "name": "Barracuda Trials — Best Ironman XP",
-          "xp_per_hour": 75000,
-          "location": "Open sea Encounter zones",
-          "tip": "Best Sailing XP/hr for Ironmen. Barracuda Trials are a combat-agility encounter on the open sea that reward both Sailing XP and Ironman-friendly loot (unique fish and rare ship components). Stack your crew with combat-specialist members before attempting. Prioritise Barracuda Trials over passive resource runs until you unlock Galleon tier at 70+ Sailing."
-        },
-        {
-          "min_level": 80,
+          "min_level": 72,
           "max_level": 99,
-          "name": "Galleon — Long Haul Routes + Barracuda Trials",
-          "xp_per_hour": 100000,
-          "location": "Distant island chains (Sailing world map)",
-          "tip": "Galleon class is the endgame ship. Long Haul Routes to distant island chains give 100K+ XP/hr and deliver: Sailing Halibut in bulk, Ironwood and Rosewood Planks, and rare navigation charts. Combine 60% Long Haul Routes with 40% Barracuda Trials for maximum Sailing XP efficiency. Complete all Port Supply side quests for permanent crew XP bonuses that carry forward to 99."
+          "name": "Barracuda Trials — The Gwenith Glide",
+          "xp_per_hour": 150000,
+          "location": "Barracuda Trials course",
+          "tip": "Gwenith Glide is the fastest Sailing XP in the game — 114K-198K XP/hr, the top end needing a crystal extractor. Alternatives if you want resources instead of raw rates: Lunar Isle courier tasks (120K-145K XP/hr from 76, best at 84+) and merchant shipwreck salvaging at 87 (80K-95K XP/hr). Full sea charting completion at 78 grants horizon's lure, a permanent 2.5% Sailing XP boost."
         }
       ]
     },
@@ -900,7 +900,7 @@
           "name": "Redwood / Mahogany Trees",
           "xp_per_hour": 65000,
           "location": "Fossil Island / Ape Atoll",
-          "tip": "Redwoods at Fossil Island (380 XP each) are extremely AFK — good for low-attention sessions. Mahogany trees at Ape Atoll (125 XP) are faster and supply mahogany planks for Expert Mahogany Homes contracts. Rosewood Planks from Sailing routes can supplement Construction plank supply at 40 Sailing."
+          "tip": "Redwoods at Fossil Island (380 XP each) are extremely AFK — good for low-attention sessions. Mahogany trees at Ape Atoll (125 XP) are faster and supply mahogany planks for Expert Mahogany Homes contracts. Rosewood trees (92 Woodcutting, 212.5 XP per log) sit on Drumstick Isle, which needs 79 Sailing to dock at — their planks are shipbuilding material, not Construction supply."
         }
       ]
     }
