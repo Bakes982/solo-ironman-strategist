@@ -34,7 +34,7 @@ import java.util.Map;
  *   <li>Smithing  — Steel → cannonballs + Mithril/Adamant/Rune bars</li>
  *   <li>Farming   — 9 herb seeds with estimated run XP</li>
  *   <li>Prayer    — Dragon/wyrm/hydra/superior dragon bones + ensouled heads</li>
- *   <li>Sailing   — Shipyard upgrade materials (Sloop / Caravel / Galleon)</li>
+ *   <li>Sailing   — Hull upgrade materials (wooden through camphor)</li>
  * </ul>
  */
 @Slf4j
@@ -287,21 +287,23 @@ public class BankScanner
     private static final int ITEM_TEAK_PLANK     = 8780;
     private static final int ITEM_MAHOGANY_PLANK = 8782;
 
-    // Sailing — shipyard materials
-    private static final int ITEM_BOLT_OF_CLOTH = 8790;   // sail cloth (also Construction)
-    private static final int ITEM_MITHRIL_NAILS = 4822;   // OSRS wiki ID — verify in-game
+    // Sailing — shipbuilding materials (wiki item IDs)
+    private static final int ITEM_CAMPHOR_PLANK    = 31432;
+    private static final int ITEM_BRONZE_NAILS     =  4819;
+    private static final int ITEM_IRON_NAILS       =  4820;
+    private static final int ITEM_MITHRIL_NAILS    =  4822;
+    private static final int ITEM_ADAMANTITE_NAILS =  4823;
+    private static final int ITEM_SWAMP_TAR        =  1939;
+    private static final int ITEM_LEAD_BAR         = 32889;
 
-    // Ship upgrade material thresholds (Port Sarim Shipwright).
-    // These are beta-era estimates — update if Jagex adjusts upgrade costs at launch.
-    static final int SLOOP_PLANKS_NEED   =  50;   // Regular planks
-    static final int SLOOP_NAILS_NEED    = 100;   // Steel nails
-    static final int SLOOP_CLOTH_NEED    =   2;   // Bolt of cloth
-    static final int CARAVEL_PLANKS_NEED = 100;   // Oak planks
-    static final int CARAVEL_NAILS_NEED  = 200;   // Steel nails
-    static final int CARAVEL_CLOTH_NEED  =   5;   // Bolt of cloth
-    static final int GALLEON_PLANKS_NEED = 200;   // Teak planks
-    static final int GALLEON_NAILS_NEED  = 500;   // Mithril nails
-    static final int GALLEON_CLOTH_NEED  =  10;   // Bolt of cloth
+    // Hull upgrade costs, per hull, for a sloop — the largest ship (50 Sailing,
+    // 200k coins) and the one a player keeps to 99, so it is the only size worth
+    // stockpiling for.  A sloop hull takes 16 large hull parts, which is 400
+    // planks of the tier's wood; a skiff hull takes 10 small parts (50 planks).
+    static final int HULL_PLANKS_NEED    = 400;
+    static final int HULL_NAILS_NEED     = 600;
+    static final int HULL_SWAMP_TAR_NEED =  25;
+    static final int HULL_LEAD_BAR_NEED  =   5;   // teak tier and above only
 
     // Farming — herb seeds
     // All use ItemID.* constants. Previous values for TOADFLAX (5298→5296),
@@ -1184,76 +1186,116 @@ public class BankScanner
     // ─── Sailing shipyard summary ─────────────────────────────────────────────
 
     /**
-     * A lightweight snapshot of all materials relevant to ship hull/sail upgrades.
+     * One hull tier's material progress, in the order the player upgrades through
+     * them.  Every tier costs the same shape of materials — planks of the tier's
+     * wood, nails of the tier's metal, swamp tar, and (from teak up) lead bars —
+     * so a single card layout covers all of them.
+     */
+    public static class HullTier
+    {
+        /** Wood name, e.g. "Teak". */
+        public final String  name;
+        /** Sailing level required to build this hull. */
+        public final int     sailingLevel;
+        /** Construction level required to build this hull. */
+        public final int     constructionLevel;
+
+        public final String  plankName;    // e.g. "Teak planks"
+        public final int     planks;       // banked
+        public final String  nailName;     // e.g. "Steel nails"
+        public final int     nails;        // banked
+        public final int     swampTar;     // banked
+        public final int     leadBars;     // banked
+        /** {@code false} for the wooden and oak tiers, which take no bars. */
+        public final boolean needsLeadBars;
+        /** {@code true} when every material for this hull is stockpiled. */
+        public final boolean ready;
+
+        HullTier(String name, int sailingLevel, int constructionLevel,
+                 String plankName, int planks, String nailName, int nails,
+                 int swampTar, int leadBars, boolean needsLeadBars)
+        {
+            this.name              = name;
+            this.sailingLevel      = sailingLevel;
+            this.constructionLevel = constructionLevel;
+            this.plankName         = plankName;
+            this.planks            = planks;
+            this.nailName          = nailName;
+            this.nails             = nails;
+            this.swampTar          = swampTar;
+            this.leadBars          = leadBars;
+            this.needsLeadBars     = needsLeadBars;
+
+            this.ready = planks   >= HULL_PLANKS_NEED
+                      && nails    >= HULL_NAILS_NEED
+                      && swampTar >= HULL_SWAMP_TAR_NEED
+                      && (!needsLeadBars || leadBars >= HULL_LEAD_BAR_NEED);
+        }
+    }
+
+    /**
+     * A lightweight snapshot of all materials relevant to ship hull upgrades.
      *
-     * <p>The three "ready" flags indicate whether the player has enough of every
-     * required material to attempt the corresponding Shipwright upgrade right now.
-     * Upgrade cost constants are package-accessible so {@code BankTabPanel} can
-     * render exact have/need lines without duplicating the numbers.</p>
+     * <p>Only the hull line is modelled. Keels and masts/sails have their own
+     * material tables which this plugin does not track — the panel says so
+     * rather than guessing at them.</p>
      */
     public static class ShipyardSummary
     {
-        // Raw banked counts
-        public final int regularPlanks;   // Regular planks — Sloop hull
-        public final int oakPlanks;       // Oak planks — Caravel hull
-        public final int teakPlanks;      // Teak planks — Galleon hull
-        public final int boltOfCloth;     // Bolt of cloth — all sail tiers
-        public final int steelNails;      // Steel nails — Sloop + Caravel
-        public final int mithrilNails;    // Mithril nails — Galleon
+        /** Hull tiers in upgrade order, wooden first. */
+        public final List<HullTier> hullTiers;
 
-        // Derived readiness flags
-        public final boolean sloopReady;
-        public final boolean caravelReady;
-        public final boolean galleonReady;
+        // Shared materials, surfaced for the section's summary line
+        public final int swampTar;
+        public final int leadBars;
 
         /**
-         * {@code true} when the player has at least one sail-related material
-         * (cloth or nails).  Used by {@code BankTabPanel} to decide whether to
-         * render the section at all.
+         * {@code true} when the player has at least one shipbuilding material
+         * banked.  Used by {@code BankTabPanel} to decide whether to render the
+         * section at all.
          */
         public final boolean hasSailingMaterials;
 
-        ShipyardSummary(int regularPlanks, int oakPlanks, int teakPlanks,
-                        int boltOfCloth, int steelNails, int mithrilNails)
+        ShipyardSummary(List<HullTier> hullTiers, int swampTar, int leadBars)
         {
-            this.regularPlanks = regularPlanks;
-            this.oakPlanks     = oakPlanks;
-            this.teakPlanks    = teakPlanks;
-            this.boltOfCloth   = boltOfCloth;
-            this.steelNails    = steelNails;
-            this.mithrilNails  = mithrilNails;
+            this.hullTiers = hullTiers;
+            this.swampTar  = swampTar;
+            this.leadBars  = leadBars;
 
-            this.sloopReady   = regularPlanks >= SLOOP_PLANKS_NEED
-                             && steelNails    >= SLOOP_NAILS_NEED
-                             && boltOfCloth   >= SLOOP_CLOTH_NEED;
-
-            this.caravelReady = oakPlanks     >= CARAVEL_PLANKS_NEED
-                             && steelNails    >= CARAVEL_NAILS_NEED
-                             && boltOfCloth   >= CARAVEL_CLOTH_NEED;
-
-            this.galleonReady = teakPlanks    >= GALLEON_PLANKS_NEED
-                             && mithrilNails  >= GALLEON_NAILS_NEED
-                             && boltOfCloth   >= GALLEON_CLOTH_NEED;
-
-            this.hasSailingMaterials = boltOfCloth > 0 || steelNails > 0 || mithrilNails > 0;
+            boolean any = swampTar > 0 || leadBars > 0;
+            for (HullTier t : hullTiers)
+            {
+                any |= t.planks > 0 || t.nails > 0;
+            }
+            this.hasSailingMaterials = any;
         }
     }
 
     /**
      * Returns a {@link ShipyardSummary} snapshot from the current bank cache.
-     * Reads planks, nails and sail cloth needed for ship tier upgrades.
      * Safe to call on any thread — reads only from the HashMap cache.
      */
     public ShipyardSummary getShipyardSummary()
     {
-        return new ShipyardSummary(
-            getCount(ITEM_PLANK),
-            getCount(ITEM_OAK_PLANK),
-            getCount(ITEM_TEAK_PLANK),
-            getCount(ITEM_BOLT_OF_CLOTH),
-            getCount(ItemID.STEEL_NAILS),
-            getCount(ITEM_MITHRIL_NAILS)
-        );
+        int tar  = getCount(ITEM_SWAMP_TAR);
+        int lead = getCount(ITEM_LEAD_BAR);
+
+        // Tiers, levels and materials per the OSRS wiki hull table. Ironwood (81)
+        // and rosewood (93) hulls are omitted: their planks are late-game island
+        // resources that no bank holds while this section is still useful.
+        List<HullTier> tiers = new ArrayList<>();
+        tiers.add(new HullTier("Wooden", 1, 1, "Planks", getCount(ITEM_PLANK),
+            "Bronze nails", getCount(ITEM_BRONZE_NAILS), tar, lead, false));
+        tiers.add(new HullTier("Oak", 20, 8, "Oak planks", getCount(ITEM_OAK_PLANK),
+            "Iron nails", getCount(ITEM_IRON_NAILS), tar, lead, false));
+        tiers.add(new HullTier("Teak", 31, 23, "Teak planks", getCount(ITEM_TEAK_PLANK),
+            "Steel nails", getCount(ItemID.STEEL_NAILS), tar, lead, true));
+        tiers.add(new HullTier("Mahogany", 48, 41, "Mahogany planks", getCount(ITEM_MAHOGANY_PLANK),
+            "Mithril nails", getCount(ITEM_MITHRIL_NAILS), tar, lead, true));
+        tiers.add(new HullTier("Camphor", 67, 59, "Camphor planks", getCount(ITEM_CAMPHOR_PLANK),
+            "Adamantite nails", getCount(ITEM_ADAMANTITE_NAILS), tar, lead, true));
+
+        return new ShipyardSummary(tiers, tar, lead);
     }
 
     // ─── LogBowEntry inner class ──────────────────────────────────────────────

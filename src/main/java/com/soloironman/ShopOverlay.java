@@ -130,11 +130,14 @@ public class ShopOverlay extends WidgetItemOverlay
             }
         }
 
-        // ── Rosewood Planks (Sailing meta, level 40+ gate) ────────────────────
+        // ── Rosewood Planks (rosewood hull — 93 Sailing, 84 Construction) ─────
+        // Rosewood logs come from Drumstick Isle (92 Woodcutting, 79 Sailing to
+        // dock) and are sawmilled into planks, so this only fires in the unlikely
+        // event a shop stocks them.
         if (itemId == ITEM_ROSEWOOD_PLANK)
         {
             int sailingLevel = getSailingLevel();
-            if (sailingLevel >= 40)
+            if (sailingLevel >= 79)
             {
                 int inBank = bankScanner.getCount(ITEM_ROSEWOOD_PLANK);
                 if (inBank < config.rosewoodPlankThreshold())

@@ -101,7 +101,7 @@ public interface SoloIronmanConfig extends Config
     @ConfigItem(
         keyName     = "rosewoodPlankThreshold",
         name        = "Rosewood Planks (Sailing)",
-        description = "Highlight in shop if Sailing >= 40 and bank < this.",
+        description = "Highlight in shop if Sailing >= 79 and bank < this.",
         section     = shopSection,
         position    = 3
     )
